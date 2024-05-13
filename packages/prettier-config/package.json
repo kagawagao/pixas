@@ -1,0 +1,31 @@
+{
+  "name": "@pixas/prettier-config",
+  "version": "0.0.0",
+  "description": "prettier config",
+  "author": "kagawa <kingsongao1221@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kagawagao/pixas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "prettier": "^3.0.0"
+  }
+}

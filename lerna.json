@@ -1,0 +1,55 @@
+{
+  "$schema": "./node_modules/lerna/schemas/lerna-schema.json",
+  "packages": ["packages/*"],
+  "version": "0.0.0",
+  "ignoreChanges": ["**/__fixtures__/**", "**/__tests__/**", "**/*.md", "**/package-lock.json"],
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish %v",
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "chore",
+            "section": "Chores"
+          },
+          {
+            "type": "docs",
+            "section": "Docs"
+          },
+          {
+            "type": "style",
+            "section": "Styles"
+          },
+          {
+            "type": "refactor",
+            "section": "Refactors"
+          },
+          {
+            "type": "perf",
+            "section": "Performances"
+          },
+          {
+            "type": "test",
+            "section": "Tests"
+          }
+        ],
+        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+        "userUrlFormat": "{{host}}/{{user}}",
+        "releaseCommitMessageFormat": "chore(release): publish {{currentTag}}",
+        "issuePrefixes": ["#"]
+      }
+    }
+  }
+}

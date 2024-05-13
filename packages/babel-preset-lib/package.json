@@ -1,0 +1,38 @@
+{
+  "name": "@pixas/babel-preset-lib",
+  "version": "0.0.0",
+  "description": "babel preset for js lib",
+  "author": "kagawa <kingsongao1221@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kagawagao/pixas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "^7.13.10",
+    "babel-plugin-import": "^1.13.3",
+    "typescript": "^5.0.2"
+  }
+}
