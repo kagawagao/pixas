@@ -22,9 +22,6 @@ export default function (config: Configuration) {
     use: [
       {
         loader: require.resolve('vue-loader'),
-        options: {
-          babelParserPlugins: ['jsx', 'classProperties', 'decorators-legacy'],
-        },
       },
     ],
   });
