@@ -69,5 +69,35 @@ export interface AppConfig {
    * is monorepo
    */
   isMono?: boolean;
+  /**
+   * dts config
+   */
+  dts?: DtsConfig;
   [k: string]: any;
+}
+
+export interface DtsModule {
+  /**
+   * open api spec url, support local file path
+   */
+  url: string;
+  /**
+   * namespace
+   */
+  namespace: string;
+  /**
+   * base path
+   * if not set, use base path from open api spec
+   */
+  basePath?: string;
+  /**
+   * extract field from response data
+   * @example 'data'
+   */
+  extractField?: string | string[];
+}
+export interface DtsConfig {
+  /**
+   */
+  modules: DtsModule[];
 }
