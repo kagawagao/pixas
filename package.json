@@ -5,7 +5,8 @@
   "description": "pixas - a front end develop toolkit",
   "workspaces": [
     "packages/*",
-    "templates/*"
+    "templates/*",
+    "examples/*"
   ],
   "scripts": {
     "prelint": "npm run build",
@@ -26,6 +27,7 @@
     "@pixas/stylelint-config": "file:./packages/stylelint-config",
     "@types/babel__helper-plugin-utils": "^7.10.3",
     "@types/eslint": "^8.56.10",
+    "@types/fs-extra": "^11.0.4",
     "@types/signale": "^1.4.7",
     "cross-env": "^7.0.3",
     "husky": "^9.0.11",

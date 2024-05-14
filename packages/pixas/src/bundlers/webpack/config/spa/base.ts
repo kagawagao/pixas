@@ -95,7 +95,7 @@ const config: Configuration = {
   },
   plugins: [
     new WebpackBar({
-      name: 'pangu',
+      name: 'Pixas',
     }),
     new webpack.WatchIgnorePlugin({
       paths: [/(css|less)\.d\.ts$/],

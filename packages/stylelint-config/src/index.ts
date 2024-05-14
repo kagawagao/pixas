@@ -21,7 +21,7 @@ const stylelintConfig: Config = {
       customSyntax: 'postcss-scss',
     },
     {
-      files: ['**/*.vue', '**/*.html'],
+      files: ['**/*.vue', '**/*.html', '**/*.ejs'],
       // eslint-disable-next-line @typescript-eslint/no-var-requires
       customSyntax: require('postcss-html')({
         less: 'postcss-less',

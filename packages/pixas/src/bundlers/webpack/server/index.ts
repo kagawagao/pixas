@@ -2,9 +2,9 @@ import yargs, { Arguments } from 'yargs';
 import { fork } from 'node:child_process';
 import fs from 'node:fs';
 import signale from 'signale';
-import { config as app } from '../../../configs/app';
+import { AppMode } from '../../../types';
 
-const serverModes = {
+const serverModes: Partial<Record<AppMode, string>> = {
   spa: require.resolve('./spa/index.js'),
   // ssr: require.resolve('./ssr/index.js'),
 };
@@ -23,7 +23,7 @@ function createDevServerProcess({ host, port, mode }: ServerProcessOptions) {
   if ((yargs.argv as { [key in keyof Arguments<any>]: Arguments<any>[key] }).esCheck) {
     args.push('--es-check');
   }
-  const serverExecutePath = serverModes[mode]?.[app.mode ?? 'spa'];
+  const serverExecutePath = serverModes[mode];
   if (serverExecutePath && fs.existsSync(serverExecutePath)) {
     return fork(serverExecutePath, args, {
       stdio: 'inherit',

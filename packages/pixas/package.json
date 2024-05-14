@@ -5,8 +5,7 @@
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "bin/index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
   "directories": {
     "bin": "bin",
     "test": "__tests__"
@@ -14,11 +13,10 @@
   "files": [
     "bin",
     "lib",
-    "index.d.ts",
     "index.ejs"
   ],
   "bin": {
-    "pangu": "./bin/index.js"
+    "pixas": "./bin/index.js"
   },
   "publishConfig": {
     "access": "public"
@@ -49,7 +47,7 @@
     "babel-loader": "^9.1.0",
     "babel-plugin-formatjs": "^10.2.12",
     "chalk": "^4.1.2",
-    "commander": "^11.0.0",
+    "commander": "^12.0.0",
     "copy-webpack-plugin": "^12.0.2",
     "core-js": "^3.10.1",
     "cosmiconfig": "^9.0.0",
@@ -64,9 +62,9 @@
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^9.0.0",
-    "globby": "^11.1.0",
+    "fs-extra": "^11.2.0",
     "html-webpack-plugin": "^5.3.1",
-    "json-server": "^1.0.0-alpha.21",
+    "json-server": "^1.0.0-beta.0",
     "less": "^4.1.1",
     "less-loader": "^12.0.0",
     "mini-css-extract-plugin": "^2.1.0",
@@ -74,7 +72,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^8.0.0",
     "postcss-normalize": "^10.0.0",
-    "postcss-preset-env": "^9.0.0",
+    "postcss-preset-env": "^9.5.13",
     "prettier": "^3.0.0",
     "react-dev-utils": "^12.1.0-next.14",
     "react-refresh": "^0.14.0",

@@ -1,0 +1,32 @@
+{
+  "name": "@pixas/react-app",
+  "description": "pixas react app demo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pixas dev",
+    "build": "pixas build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@pixas/babel-preset-app": "^0.0.0",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "pixas": "^0.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

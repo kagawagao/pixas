@@ -36,8 +36,6 @@ program
 
       const isInteractive = process.stdout.isTTY;
 
-      signale.start('Starting the development server...\n');
-
       await checkBrowsers(process.cwd(), isInteractive);
       const chosenPort = await choosePort(HOST, DEFAULT_PORT);
       if (!chosenPort) {
@@ -47,7 +45,6 @@ program
         port: chosenPort,
         open: true,
         host: HOST,
-        mode: appConfig.mode,
       });
     } catch (err: any) {
       if (err?.message) {

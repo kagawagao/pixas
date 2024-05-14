@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import '../../env/dev';
+import '../../../../configs/env/dev';
 import { argv } from 'yargs';
 import WebpackDevServer from 'webpack-dev-server';
 import webpack from 'webpack';

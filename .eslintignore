@@ -1,5 +1,5 @@
 es
 lib
 bin
+build
 *.d.ts
-packages/cli/ssr/*.js

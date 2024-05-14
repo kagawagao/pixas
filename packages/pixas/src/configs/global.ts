@@ -1,6 +1,6 @@
 import { srcDir, publicDir, workDir } from './paths';
-import path from 'path';
-import fs from 'fs';
+import path from 'node:path';
+import fs from 'fs-extra';
 import prettier from 'prettier';
 import { formatGlobalVars } from '../utils/env';
 import { getGlobalConfig } from '../utils/global';
@@ -48,7 +48,9 @@ export async function writeDefinitionFile(filepath, content) {
     parser: 'typescript',
   });
 
-  fs.writeFileSync(filepath, formattedContent, {
+  await fs.ensureDir(path.dirname(filepath));
+
+  await fs.writeFile(filepath, formattedContent, {
     encoding: 'utf-8',
   });
 }
@@ -68,8 +70,11 @@ const isUnderMono = isMonoRepo(path.resolve(workDir, '../../'));
 
 if (isUnderMono) {
   const monoRepoBaseDir = path.resolve(workDir, '../../');
-  const sharedGlobalDefinitionFilePath = path.resolve(monoRepoBaseDir, 'packages/shared/globals.d.ts');
-  writeDefinitionFile(sharedGlobalDefinitionFilePath, sharedGlobalDefinitionsContent);
+  const sharedDir = path.resolve(monoRepoBaseDir, 'packages/shared');
+  if (fs.existsSync(sharedDir)) {
+    const sharedGlobalDefinitionFilePath = path.resolve(monoRepoBaseDir, sharedDir, 'globals.d.ts');
+    writeDefinitionFile(sharedGlobalDefinitionFilePath, sharedGlobalDefinitionsContent);
+  }
 }
 
 export default compileGlobalVars;

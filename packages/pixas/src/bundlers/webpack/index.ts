@@ -1,18 +1,14 @@
-import { getEnvPaths, loadEnv } from '../../configs/env';
-import { workDir } from '../../configs/paths';
-import BaseBundler from '../base';
-import { StartOptions } from '../types';
-import createDevServerProcess from './server';
-import path from 'node:path';
 import chokidar from 'chokidar';
 import signale from 'signale';
-
-const webpackConfigPaths = [
-  'webpack.config.ts',
-  'webpack.config.js',
-  'config/webpack.config.ts',
-  'config/webpack.config.js',
-].map((file) => path.resolve(workDir, file));
+import { getEnvPaths, loadEnv } from '../../configs/env';
+import BaseBundler from '../base';
+import { StartOptions } from '../types';
+import { webpackConfigPaths } from './constants';
+import createDevServerProcess from './server';
+import formatWebpackMessages from 'react-dev-utils/formatWebpackMessages';
+import printBuildError from 'react-dev-utils/printBuildError';
+import webpack from 'webpack';
+import configs from './config';
 
 export default class WebpackBundler extends BaseBundler {
   public start = async (opts: StartOptions) => {
@@ -22,10 +18,11 @@ export default class WebpackBundler extends BaseBundler {
       ignoreInitial: true,
     });
 
+    signale.start('Starting the development server...\n');
     const child = createDevServerProcess({
       host: opts.host ?? '0.0.0.0',
       port: opts.port ?? 3000,
-      mode: 'spa',
+      mode: this.app.mode ?? 'spa',
     });
 
     const restart = () => {
@@ -62,7 +59,63 @@ export default class WebpackBundler extends BaseBundler {
     });
   };
 
-  public build(): Promise<void> {
-    return Promise.resolve();
-  }
+  public build = async () => {
+    signale.info('Compile start');
+
+    const compiler = webpack(configs[this.app.mode]);
+
+    // create compiler
+    compiler.run((err, stats) => {
+      let messages;
+      // normal error from process
+      if (err) {
+        let errMessage = err.message;
+
+        if (errMessage) {
+          // Add additional information for postcss errors
+          if (Object.prototype.hasOwnProperty.call(err, 'postcssNode')) {
+            errMessage += '\nCompileError: Begins at CSS selector ' + (err as any).postcssNode.selector;
+          }
+
+          messages = formatWebpackMessages({
+            errors: [errMessage],
+            warnings: [],
+          });
+        }
+      } else {
+        messages = formatWebpackMessages(stats.toJson({ all: false, warnings: true, errors: true }));
+      }
+
+      if (messages.errors.length) {
+        // Only keep the first error. Others are often indicative
+        // of the same problem, but confuse the reader with noise.
+        if (messages.errors.length > 1) {
+          messages.errors.length = 1;
+        }
+        messages = messages.errors.join('\n\n');
+      }
+
+      if (stats.hasErrors()) {
+        const tscCompileOnError = process.env.TSC_COMPILE_ON_ERROR === 'true';
+        if (tscCompileOnError) {
+          signale.error(
+            'Compiled with the following type errors (you may want to check these before deploying your app):\n',
+          );
+          printBuildError(messages);
+        } else {
+          signale.error('Failed to compile.\n');
+          printBuildError(messages);
+          process.exit(1);
+        }
+      } else if (stats.hasWarnings()) {
+        signale.warn('Compiled with warnings.\n');
+        console.log(messages.warnings.join('\n\n'));
+      } else {
+        signale.success('Compiled successfully.\n');
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      compiler.close(() => {});
+    });
+  };
 }
