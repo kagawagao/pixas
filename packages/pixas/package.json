@@ -31,8 +31,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --extensions .ts --delete-dir-on-start",
     "postbuild": "npm run build:types",
-    "build:types": "tsc && npm run build:bundle",
-    "build:bundle": "dts-bundle-generator --project ./tsconfig.json --out-file ./index.d.ts ./lib/utils/types.d.ts --no-check",
+    "build:types": "tsc",
     "preversion": "npm run build"
   },
   "dependencies": {

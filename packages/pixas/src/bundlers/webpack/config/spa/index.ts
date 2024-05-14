@@ -1,0 +1,120 @@
+import { merge } from 'webpack-merge';
+import baseConfig from './base';
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
+import { appConfig } from './app';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { tplPath, workDir } from '../../../../configs/paths';
+import { config as app } from '../../../../configs/app';
+import { isVue2, isVue } from '../../../../utils/framework';
+import vue2ConfigFunc from './vue2';
+import vueConfigFunc from './vue';
+import InjectEnvPlugin from '../../plugins/inject-env-plugin';
+import chalk from 'chalk';
+import path from 'node:path';
+import fs from 'node:fs';
+import signale from 'signale';
+import { Configuration } from 'webpack';
+
+// const PRODUCT = process.env.NODE_ENV === 'production';
+
+const frameworkConfig = isVue
+  ? // eslint-disable-next-line @typescript-eslint/no-var-requires
+    vueConfigFunc(baseConfig)
+  : isVue2
+    ? // eslint-disable-next-line @typescript-eslint/no-var-requires
+      vue2ConfigFunc(baseConfig)
+    : // eslint-disable-next-line @typescript-eslint/no-var-requires
+      baseConfig;
+
+const config: Configuration =
+  typeof appConfig === 'function' ? appConfig(frameworkConfig, false) : merge(frameworkConfig, appConfig);
+
+if (config.entry) {
+  const entry = config.entry;
+
+  if (typeof entry === 'object' && Object.keys(entry).length > 1) {
+    const entries = Object.keys(entry);
+
+    entries.forEach((name, index) => {
+      config.plugins!.push(
+        new HtmlWebpackPlugin({
+          filename: `${index === 0 ? 'index' : name}.html`,
+          template: tplPath,
+          title: process.env.APP_NAME || '',
+        }),
+      );
+    });
+  } else {
+    config.plugins!.push(
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: tplPath,
+        title: process.env.APP_NAME || '',
+      }),
+    );
+  }
+
+  config.plugins!.push(new InjectEnvPlugin());
+
+  // if (PRODUCT) {
+  //   config.plugins.push(
+  //     new PWAManifestPlugin({
+  //       name: app.name,
+  //       short_name: app.name,
+  //       description: app.description,
+  //       crossorigin: 'anonymous',
+  //       theme_color: '#014fe0',
+  //       filename: 'manifest.json',
+  //       icons: [
+  //         {
+  //           src: 'favicon-48x48.png',
+  //           size: '48x48',
+  //         },
+  //       ],
+  //     }) as any,
+  //   );
+  // }
+}
+
+if (app.logo) {
+  const logo = path.resolve(workDir, app.logo);
+  if (fs.existsSync(logo)) {
+    try {
+      require('favicons');
+      config.plugins!.push(
+        new FaviconsWebpackPlugin({
+          logo,
+          logoMaskable: logo,
+          cache: true,
+          prefix: '',
+          inject: true,
+          favicons: {
+            appName: app.name,
+            appDescription: app.description,
+            appShortName: app.name,
+            theme_color: '#014fe0',
+            display: 'standalone',
+            orientation: 'portrait',
+            start_url: '.',
+            version: app.version,
+            manifestMaskable: true,
+            lang: 'zh-CN',
+            icons: {
+              favicons: true,
+              android: true,
+              appleIcon: true,
+              appleStartup: false,
+              windows: true,
+              yandex: false,
+            },
+          },
+        }),
+      );
+    } catch (error) {}
+  } else {
+    signale.error(chalk.redBright(`${logo} not found!`));
+    process.exit(1);
+  }
+}
+
+export default config;

@@ -1,20 +1,24 @@
+import { AppConfig } from '../types';
+import { StartOptions } from './types';
+
 export interface IBundler {
-  dev: () => Promise<void>;
-  build: () => Promise<void>;
+  start: (options?: StartOptions) => Promise<void> | void;
+  build: () => Promise<void> | void;
 }
 
 export default abstract class BaseBundler implements IBundler {
-  constructor() {
-    console.log('base bundler');
+  public app = {} as AppConfig;
+  constructor(app: AppConfig) {
+    this.app = app;
   }
 
   /**
    * Start a development server
    */
-  public abstract dev(): Promise<void>;
+  public abstract start(options?: StartOptions): Promise<void> | void;
 
   /**
    * Build the project
    */
-  public abstract build(): Promise<void>;
+  public abstract build(): Promise<void> | void;
 }

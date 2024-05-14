@@ -7,10 +7,13 @@ import path from 'node:path';
 // @ts-ignore
 import pkg from '../package.json';
 
+export * from './types';
+
 /**
  * Usage
  */
 program
+  .name('pixas')
   .version(pkg.version)
   .description('pixas develop toolkit')
   .usage('<command> [options]')
@@ -20,10 +23,7 @@ program
   .command('build', 'build dist files for production', {
     executableFile: path.resolve(__dirname, './commands/build'),
   })
-  .command('i18n', 'extract i18n messages', {
-    executableFile: path.resolve(__dirname, './commands/i18n'),
-  })
-  .command('dts', 'generate swagger interfaces to .d.ts', {
+  .command('dts', 'generate open api request client', {
     executableFile: path.resolve(__dirname, './commands/dts'),
   })
   .command('env', 'generate .env file config', {
