@@ -1,5 +1,5 @@
 import MiniCSSExtractPlugin from 'mini-css-extract-plugin';
-import postcssConfig from './postcss';
+import postcssConfig from '../../../configs/postcss';
 import { RuleSetUseItem } from 'webpack';
 import { config as app } from '../../../configs/app';
 
