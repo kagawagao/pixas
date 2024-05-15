@@ -123,3 +123,4 @@ lib
 # lerna
 lerna-debug.log
 .nx
+.vscode
