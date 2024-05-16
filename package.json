@@ -26,6 +26,7 @@
     "@pixas/prettier-config": "file:./packages/prettier-config",
     "@pixas/stylelint-config": "file:./packages/stylelint-config",
     "@types/babel__helper-plugin-utils": "^7.10.3",
+    "@types/ejs": "^3.1.5",
     "@types/eslint": "^8.56.10",
     "@types/fs-extra": "^11.0.4",
     "@types/signale": "^1.4.7",

@@ -3,7 +3,7 @@ import semver from 'semver';
 
 const { dependencies } = pkg;
 
-function getFramework() {
+function getFramework(): 'react' | 'vue' | 'vue2' | 'unknown' {
   if (typeof dependencies.react === 'string') {
     return 'react';
   } else if (typeof dependencies.vue === 'string') {
