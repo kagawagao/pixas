@@ -16,13 +16,11 @@ export default class ViteBundler extends Bundler {
     this.config = configs[this.mode]!;
   }
 
-  public start = async (opts: StartOptions) => {
-    if (this.app.mode !== 'spa') {
-      signale.error('Vite only supports SPA mode at now.');
-      return;
-    }
-    // check if there is a index.html file in the root directory
-    // if not, create a default one
+  /**
+   * Check if there is a index.html file in the root directory
+   */
+  private checkIndexHtml = async () => {
+    // if not exists, create a default one
     const indexHtml = `${workDir}/index.html`;
     if (!fs.existsSync(indexHtml)) {
       const template = await fs.readFile(tplPath, 'utf-8');
@@ -42,6 +40,14 @@ export default class ViteBundler extends Bundler {
 
       await fs.writeFile(indexHtml, html);
     }
+  };
+
+  public start = async (opts: StartOptions) => {
+    if (this.app.mode !== 'spa') {
+      signale.error('Vite only supports SPA mode at now.');
+      return;
+    }
+    await this.checkIndexHtml();
     signale.start('Starting the development server...\n');
     const server = await createServer({
       ...this.config,
@@ -63,6 +69,7 @@ export default class ViteBundler extends Bundler {
       signale.error('Vite only supports SPA mode at now.');
       return;
     }
+    await this.checkIndexHtml();
     await build({
       ...this.config,
       // disable env file to avoid conflict with globals config
