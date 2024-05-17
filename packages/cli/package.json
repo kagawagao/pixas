@@ -1,5 +1,5 @@
 {
-  "name": "pixas",
+  "name": "@pixas/cli",
   "version": "0.0.0",
   "description": "front end develop toolkit",
   "author": "kagawa <kingsongao1221@gmail.com>",
@@ -65,5 +65,17 @@
     "@types/less": "^3.0.3",
     "@types/react-dev-utils": "^9.0.11",
     "@types/webpack-node-externals": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@pixas/bundler-webpack": "^0.0.0",
+    "@pixas/bundler-vite": "^0.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@pixas/bundler-webpack": {
+      "optional": true
+    },
+    "@pixas/bundler-vite": {
+      "optional": true
+    }
   }
 }

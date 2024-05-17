@@ -16,7 +16,7 @@
     "@pixas/bundler-webpack": "^0.0.0",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
-    "pixas": "^0.0.0"
+    "@pixas/cli": "^0.0.0"
   },
   "browserslist": {
     "production": [
