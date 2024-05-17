@@ -1,10 +1,10 @@
-import '../configs/env/dev';
+import '@pixas/common/lib/env/dev';
 import { program } from 'commander';
 import { choosePort } from 'react-dev-utils/WebpackDevServerUtils';
 import { checkBrowsers } from 'react-dev-utils/browsersHelper';
 import signale from 'signale';
-import { StartOptions } from '../bundlers/types';
-import * as app from '../configs/app';
+import { StartOptions } from '@pixas/bundler-base';
+import { app } from '@pixas/common';
 import { AppBundler } from '../types';
 import { getBundlerByType } from '../utils/bundler';
 
@@ -20,16 +20,14 @@ program
   .usage('[options]')
   .option('-i, --ip [ip]', 'host to use', '0.0.0.0')
   .option('-p, --port [port]', 'port to use', parseInt, 3000)
-  .option('-b, --bundler [bundler]', 'bundler to use', 'webpack')
+  .option('-b, --bundler [bundler]', 'bundler to use', app.config.bundler || 'webpack')
   .action(async () => {
     try {
       const { bundler: bundleType, ip, port } = program.opts<DevProgramOptions>();
 
-      const appConfig = await app.load();
+      const Bundler = await getBundlerByType(bundleType);
 
-      const Bundler = getBundlerByType(bundleType);
-
-      const bundler = new Bundler(appConfig);
+      const bundler = new Bundler();
 
       const DEFAULT_PORT = parseInt((port || process.env.PORT || 3000).toString(), 10) || 3000;
       const HOST = ip || process.env.HOST || '0.0.0.0';

@@ -6,8 +6,12 @@ front end develop toolkit, which support multi bundler(ex: webpack/vite/...) and
 
 ## Features
 
-- 📦 **Multi bundler**: support webpack/vite/...
-- 🛠 **Multi framework**: support react/vue/...
+- 📦 **Multi Bundler Support**
+  - [x] webpack
+  - [x] vite
+- 🛠 **Multi Framework Support**
+  - [x] react
+  - [x] vue
 - ⚙️ **Dynamic runtime configuration**: support dynamic runtime configuration, see [Dynamic runtime configuration](#dynamic-runtime-configuration)
 
 ## Dynamic runtime configuration

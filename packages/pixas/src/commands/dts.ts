@@ -6,9 +6,7 @@ import chalk from 'chalk';
 import { program } from 'commander';
 import path from 'node:path';
 import signale from 'signale';
-import { config as app } from '../configs/app';
-import { isMonoRepo } from '../utils/mono-repo';
-import { workDir } from '../configs/paths';
+import { app, repo, paths } from '@pixas/common';
 import { DtsModule } from '../types';
 
 program
@@ -16,7 +14,7 @@ program
   .description('generate open api request client, include service, api, definition')
   .action(async () => {
     let modules: DtsModule[] = [];
-    const { dts, isMono = isMonoRepo(workDir) } = app;
+    const { dts, isMono = repo.isMonoRepo(paths.workDir) } = app.config;
     if (dts) {
       if (dts.modules?.length > 0) {
         modules = dts.modules;
@@ -28,7 +26,7 @@ program
     const { namespace } = program.opts<{ namespace: string[] }>();
 
     function getPathFromWorkDir(...args: string[]) {
-      return path.resolve(workDir, ...args);
+      return path.resolve(paths.workDir, ...args);
     }
 
     const serviceDir = isMono ? getPathFromWorkDir('packages/shared/services') : getPathFromWorkDir('src/services');

@@ -1,0 +1,44 @@
+{
+  "name": "@pixas/common",
+  "version": "0.0.0",
+  "description": "common utils for pixas",
+  "author": "kagawa <kingsongao1221@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "index.ejs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kagawagao/pixas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "cosmiconfig": "^9.0.0",
+    "dotenv": "^16.4.5",
+    "dotenv-expand": "^11.0.6",
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "postcss": "^8.2.10",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^8.0.0",
+    "postcss-normalize": "^10.0.0",
+    "postcss-preset-env": "^9.5.13",
+    "prettier": "^3.2.5",
+    "semver": "^7.6.2",
+    "ts-node": "^10.9.2"
+  }
+}

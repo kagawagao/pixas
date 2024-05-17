@@ -1,7 +1,7 @@
-import '../configs/env/prod';
+import '@pixas/common/lib/env/prod';
 import { program } from 'commander';
 import signale from 'signale';
-import * as app from '../configs/app';
+import { app } from '@pixas/common';
 import { getBundlerByType } from '../utils/bundler';
 import { AppBundler } from '../types';
 
@@ -14,16 +14,14 @@ export interface BuildProgramOptions {
  */
 program
   .usage('[options]')
-  .option('-b, --bundler [bundler]', 'bundler to use', 'webpack')
+  .option('-b, --bundler [bundler]', 'bundler to use', app.config.bundler || 'webpack')
   .action(async () => {
     try {
       const { bundler: bundleType } = program.opts<BuildProgramOptions>();
 
-      const appConfig = await app.load();
+      const Bundler = await getBundlerByType(bundleType);
 
-      const Bundler = getBundlerByType(bundleType);
-
-      const bundler = new Bundler(appConfig);
+      const bundler = new Bundler();
       await bundler.build();
     } catch (err: any) {
       if (err?.message) {
