@@ -6,8 +6,13 @@ import path from 'node:path';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import pkg from '../package.json';
+import { AppConfig } from '@pixas/common';
 
 export * from './types';
+
+export function defineConfig(config: AppConfig) {
+  return config;
+}
 
 /**
  * Usage
