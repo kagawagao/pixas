@@ -1,0 +1,81 @@
+{
+  "name": "@pixas/cli",
+  "version": "0.0.0",
+  "description": "front end develop toolkit",
+  "author": "kagawa <kingsongao1221@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "bin": "bin",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "index.ejs"
+  ],
+  "bin": {
+    "pixas": "./bin/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kagawagao/pixas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --extensions .ts --delete-dir-on-start",
+    "postbuild": "npm run build:types",
+    "build:types": "tsc",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@opas/core": "^0.6.0",
+    "@opas/plugin-app": "^0.6.0",
+    "@pixas/babel-preset-app": "^0.0.0",
+    "@pixas/bundler-base": "^0.0.0",
+    "@pixas/common": "^0.0.0",
+    "@pixas/eslint-config": "^0.0.0",
+    "@pixas/prettier-config": "^0.0.0",
+    "@pixas/stylelint-config": "^0.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "core-js": "^3.10.1",
+    "prettier": "^3.0.0",
+    "signale": "^1.4.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@pixas/babel-preset-lib",
+        {
+          "targets": {
+            "node": 12
+          }
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@pixas/babel-preset-lib": "^0.0.0",
+    "@types/less": "^3.0.3",
+    "@types/react-dev-utils": "^9.0.11",
+    "@types/webpack-node-externals": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@pixas/bundler-webpack": "^0.0.0",
+    "@pixas/bundler-vite": "^0.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@pixas/bundler-webpack": {
+      "optional": true
+    },
+    "@pixas/bundler-vite": {
+      "optional": true
+    }
+  }
+}
