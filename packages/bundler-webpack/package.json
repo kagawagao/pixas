@@ -37,8 +37,6 @@
     "core-js": "^3.10.1",
     "css-loader": "^7.1.1",
     "css-minimizer-webpack-plugin": "^7.0.0",
-    "dotenv": "^16.4.5",
-    "dotenv-expand": "^11.0.6",
     "favicons": "^7.0.1",
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "file-loader": "^6.2.0",
