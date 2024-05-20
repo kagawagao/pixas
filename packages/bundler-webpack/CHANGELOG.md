@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/kagawagao/pixas/compare/v0.1.0...v0.1.1) (2024-05-20)
+
+### Chores
+
+- update deps ([6f4aa57](https://github.com/kagawagao/pixas/commit/6f4aa57d0dc1d26a324b78e66c13a62560b1b600))
+
 ## 0.1.0 (2024-05-20)
 
 ### Refactors
