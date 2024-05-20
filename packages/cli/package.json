@@ -1,6 +1,6 @@
 {
   "name": "@pixas/cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "front end develop toolkit",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -63,7 +63,7 @@
   "devDependencies": {
     "@pixas/babel-preset-lib": "^0.1.0",
     "@pixas/bundler-vite": "^0.1.0",
-    "@pixas/bundler-webpack": "^0.1.1",
+    "@pixas/bundler-webpack": "^0.1.2",
     "@types/less": "^3.0.3",
     "@types/react-dev-utils": "^9.0.11",
     "@types/webpack-node-externals": "^3.0.0"
