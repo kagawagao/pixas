@@ -1,6 +1,6 @@
+import { app, postcss } from '@pixas/common';
 import MiniCSSExtractPlugin from 'mini-css-extract-plugin';
 import { RuleSetUseItem } from 'webpack';
-import { app, postcss } from '@pixas/common';
 
 const DEV = process.env.NODE_ENV === 'development';
 
@@ -31,6 +31,7 @@ export function getCSSLoader(lang: 'css' | 'less' | 'sass' | 'scss', isServer = 
           localIdentName: DEV ? '[path][name]__[local]' : '[hash:base64]',
           exportLocalsConvention: 'camelCaseOnly',
           auto: true,
+          namedExport: false,
           // exportOnlyLocals: isServer,
         },
       },
