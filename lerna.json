@@ -43,10 +43,6 @@
             "section": "Tests"
           }
         ],
-        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
-        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
-        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
-        "userUrlFormat": "{{host}}/{{user}}",
         "releaseCommitMessageFormat": "chore(release): publish {{currentTag}}",
         "issuePrefixes": ["#"]
       }
