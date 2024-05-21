@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/kagawagao/pixas/compare/v0.1.2...v0.2.0) (2024-05-21)
+
+### Features
+
+- **babel-preset-app:** remove internal used plugins ([b5feea4](https://github.com/kagawagao/pixas/commit/b5feea4d8003e48bb1779272db25c9663d41c9f9))
+
+### Chores
+
+- **deps:** bump commander from 11.1.0 to 12.1.0 ([#12](https://github.com/kagawagao/pixas/issues/12)) ([13962e7](https://github.com/kagawagao/pixas/commit/13962e74e2a7e3bf455af2684e745a9aa5863f59))
+
 ## [0.1.2](https://github.com/kagawagao/pixas/compare/v0.1.1...v0.1.2) (2024-05-20)
 
 ### Bug Fixes

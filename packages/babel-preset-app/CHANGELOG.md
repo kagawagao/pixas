@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/kagawagao/pixas/compare/v0.1.2...v0.2.0) (2024-05-21)
+
+### Features
+
+- **babel-preset-app:** remove internal used plugins ([b5feea4](https://github.com/kagawagao/pixas/commit/b5feea4d8003e48bb1779272db25c9663d41c9f9))
+
 ## 0.1.0 (2024-05-20)
 
 ### Features
