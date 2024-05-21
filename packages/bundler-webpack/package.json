@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",
-    "@opd/css-modules-typings-loader": "^1.3.0",
+    "@opd/css-modules-typings-loader": "^1.4.0",
     "@pixas/bundler-base": "^0.2.0",
     "@pixas/common": "^0.2.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
