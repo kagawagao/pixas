@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/kagawagao/pixas/compare/v0.2.0...v0.2.1) (2024-05-21)
+
+### Bug Fixes
+
+- **bundler-webpack:** fix css modules typings generate ([7098a5e](https://github.com/kagawagao/pixas/commit/7098a5e4209e34921deb22efcb44efc25e08f2b4))
+
 ## [0.2.0](https://github.com/kagawagao/pixas/compare/v0.1.2...v0.2.0) (2024-05-21)
 
 **Note:** Version bump only for package @pixas/bundler-webpack
