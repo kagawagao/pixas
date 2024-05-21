@@ -33,33 +33,6 @@ module.exports = declare((api, options) => {
       development: {
         plugins: [
           [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'antd',
-              libraryDirectory: 'es',
-              style: false,
-            },
-            'antd',
-          ],
-          [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'lodash',
-              libraryDirectory: '',
-              camel2DashComponentName: false,
-            },
-            'lodash',
-          ],
-          [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'lodash-es',
-              libraryDirectory: '',
-              camel2DashComponentName: false,
-            },
-            'lodash-es',
-          ],
-          [
             require.resolve('@babel/plugin-transform-runtime'),
             {
               useESModules: true,
@@ -85,50 +58,10 @@ module.exports = declare((api, options) => {
             },
           ],
         ],
-        plugins: [
-          [require.resolve('babel-plugin-import'), false, 'antd'],
-          [require.resolve('babel-plugin-import'), false, 'wau'],
-          require.resolve('@babel/plugin-transform-runtime'),
-        ],
+        plugins: [require.resolve('@babel/plugin-transform-runtime')],
       },
       production: {
         plugins: [
-          [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'antd',
-              libraryDirectory: 'es',
-              style: false,
-            },
-            'antd',
-          ],
-          [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'antd-mobile',
-              libraryDirectory: 'es',
-              style: false,
-            },
-            'antd-mobile',
-          ],
-          [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'lodash',
-              libraryDirectory: '',
-              camel2DashComponentName: false,
-            },
-            'lodash',
-          ],
-          [
-            require.resolve('babel-plugin-import'),
-            {
-              libraryName: 'lodash-es',
-              libraryDirectory: '',
-              camel2DashComponentName: false,
-            },
-            'lodash-es',
-          ],
           [
             require.resolve('@babel/plugin-transform-runtime'),
             {
