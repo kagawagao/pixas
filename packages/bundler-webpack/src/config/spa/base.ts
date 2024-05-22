@@ -6,14 +6,13 @@ import TerserWebpackPlugin from 'terser-webpack-plugin';
 import webpack, { Configuration } from 'webpack';
 import WebpackBar from 'webpackbar';
 // const typescriptFormatter = require('react-dev-utils/typescriptFormatter')
+import { global, paths } from '@pixas/common';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { GenerateSW } from 'workbox-webpack-plugin';
 import { argv } from 'yargs';
 import { getCSSLoader } from '../utils';
-import { global, paths } from '@pixas/common';
 
 const { entryPath, outputDir, publicDir, srcDir } = paths;
 
@@ -134,20 +133,6 @@ const config: Configuration = {
     runtimeChunk: true,
   },
 };
-
-if ((argv as any).tsCheck) {
-  config.plugins!.push(
-    new ForkTsCheckerWebpackPlugin({
-      typescript: {
-        diagnosticOptions: {
-          semantic: true,
-          syntactic: true,
-        },
-        mode: 'write-references',
-      },
-    }),
-  );
-}
 
 if (DEV) {
   // config.plugins.push(new webpack.HotModuleReplacementPlugin());

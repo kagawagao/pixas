@@ -39,7 +39,6 @@
     "favicons": "^7.0.1",
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "file-loader": "^6.2.0",
-    "fork-ts-checker-webpack-plugin": "^9.0.0",
     "fs-extra": "^11.2.0",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
