@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/kagawagao/pixas/compare/v0.4.0...v0.4.1) (2024-05-22)
+
+### Bug Fixes
+
+- **cli:** fix env import path ([29c1272](https://github.com/kagawagao/pixas/commit/29c12727c6b62e0be62eff06f38ff41c42b6cca2))
+
 ## [0.4.0](https://github.com/kagawagao/pixas/compare/v0.3.0...v0.4.0) (2024-05-22)
 
 ### Features
