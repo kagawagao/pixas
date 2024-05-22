@@ -1,16 +1,17 @@
+import { StartOptions } from '@pixas/bundler-base';
+import { app, env } from '@pixas/common';
 import '@pixas/common/lib/env/dev';
 import { program } from 'commander';
 import { choosePort } from 'react-dev-utils/WebpackDevServerUtils';
 import { checkBrowsers } from 'react-dev-utils/browsersHelper';
 import signale from 'signale';
-import { StartOptions } from '@pixas/bundler-base';
-import { app } from '@pixas/common';
 import { AppBundler } from '../types';
 import { getBundlerByType } from '../utils/bundler';
 
-export interface DevProgramOptions extends Omit<StartOptions, 'mode' | 'host'> {
+export interface DevProgramOptions extends Omit<StartOptions, 'host'> {
   bundler: AppBundler;
   ip?: string;
+  env?: string;
 }
 
 /**
@@ -21,9 +22,15 @@ program
   .option('-i, --ip [ip]', 'host to use', '0.0.0.0')
   .option('-p, --port [port]', 'port to use', parseInt, 3000)
   .option('-b, --bundler [bundler]', 'bundler to use', app.config.bundler || 'webpack')
+  .option('-e, --env [env]', 'env to use')
   .action(async () => {
     try {
-      const { bundler: bundleType, ip, port } = program.opts<DevProgramOptions>();
+      const { bundler: bundleType, ip, port, env: mode } = program.opts<DevProgramOptions>();
+
+      if (mode) {
+        process.env.BIZ_ENV = mode;
+        env.loadEnv();
+      }
 
       const Bundler = await getBundlerByType(bundleType);
 

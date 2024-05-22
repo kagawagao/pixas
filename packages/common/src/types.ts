@@ -1,7 +1,7 @@
 /**
- * app runtime mode
+ * app runtime type
  */
-export type AppMode = 'spa' | 'ssr' | 'ssg';
+export type AppType = 'spa' | 'ssr' | 'ssg';
 
 /**
  * app framework
@@ -37,10 +37,10 @@ export interface GlobalConfig {
  */
 export interface AppConfig {
   /**
-   * app mode
+   * app type
    * @default spa
    */
-  mode?: AppMode;
+  type?: AppType;
   /**
    * app bundler
    * @default webpack

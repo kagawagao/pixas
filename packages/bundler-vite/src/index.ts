@@ -1,10 +1,10 @@
-import signale from 'signale';
-import fs from 'fs-extra';
 import Bundler, { StartOptions } from '@pixas/bundler-base';
-import { createServer, build, UserConfig } from 'vite';
-import ejs from 'ejs';
-import configs from './config';
 import { paths } from '@pixas/common';
+import ejs from 'ejs';
+import fs from 'fs-extra';
+import signale from 'signale';
+import { UserConfig, build, createServer } from 'vite';
+import configs from './config';
 
 const { tplPath, workDir } = paths;
 
@@ -13,7 +13,7 @@ export default class ViteBundler extends Bundler {
   constructor() {
     super();
 
-    this.config = configs[this.mode]!;
+    this.config = configs[this.type]!;
   }
 
   /**

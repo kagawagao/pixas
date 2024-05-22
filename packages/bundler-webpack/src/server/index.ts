@@ -1,9 +1,9 @@
+import { AppType } from '@pixas/common';
 import { fork } from 'node:child_process';
 import fs from 'node:fs';
 import signale from 'signale';
-import { AppMode } from '@pixas/common';
 
-const serverModes: Partial<Record<AppMode, string>> = {
+const serverModes: Partial<Record<AppType, string>> = {
   spa: require.resolve('./spa/index.js'),
   // ssr: require.resolve('./ssr/index.js'),
 };

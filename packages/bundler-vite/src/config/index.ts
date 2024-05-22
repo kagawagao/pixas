@@ -1,8 +1,8 @@
-import { AppMode } from '@pixas/common';
-import spaConfig from './spa';
+import { AppType } from '@pixas/common';
 import { UserConfig } from 'vite';
+import spaConfig from './spa';
 
-const configs: Partial<Record<AppMode, UserConfig>> = {
+const configs: Partial<Record<AppType, UserConfig>> = {
   spa: spaConfig,
 };
 

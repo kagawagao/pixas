@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "pixas dev",
+    "dev:test": "pixas dev -e test",
     "build": "pixas build"
   },
   "dependencies": {

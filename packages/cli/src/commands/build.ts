@@ -1,12 +1,13 @@
+import { app, env } from '@pixas/common';
 import '@pixas/common/lib/env/prod';
 import { program } from 'commander';
 import signale from 'signale';
-import { app } from '@pixas/common';
-import { getBundlerByType } from '../utils/bundler';
 import { AppBundler } from '../types';
+import { getBundlerByType } from '../utils/bundler';
 
 export interface BuildProgramOptions {
   bundler: AppBundler;
+  env?: string;
 }
 
 /**
@@ -15,9 +16,15 @@ export interface BuildProgramOptions {
 program
   .usage('[options]')
   .option('-b, --bundler [bundler]', 'bundler to use', app.config.bundler || 'webpack')
+  .option('-e, --env [env]', 'env to use')
   .action(async () => {
     try {
-      const { bundler: bundleType } = program.opts<BuildProgramOptions>();
+      const { bundler: bundleType, env: mode } = program.opts<BuildProgramOptions>();
+
+      if (mode) {
+        process.env.BIZ_ENV = mode;
+        env.loadEnv();
+      }
 
       const Bundler = await getBundlerByType(bundleType);
 
