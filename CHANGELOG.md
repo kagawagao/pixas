@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.0](https://github.com/kagawagao/pixas/compare/v0.2.1...v0.3.0) (2024-05-22)
+
+### Features
+
+- **bundler-webpack:** remove fork-ts-checker-webpack-plugin ([67e6274](https://github.com/kagawagao/pixas/commit/67e6274d87c6c7d131bb69c0d97a8dac644cc4ea))
+
 ## [0.2.1](https://github.com/kagawagao/pixas/compare/v0.2.0...v0.2.1) (2024-05-21)
 
 ### Bug Fixes

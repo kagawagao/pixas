@@ -1,6 +1,6 @@
 {
   "name": "@pixas/babel-preset-app",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "babel preset for react app",
   "keywords": [
     "babel",
