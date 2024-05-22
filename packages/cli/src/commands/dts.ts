@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import '../env/dev';
 import { OpenAPIPlugin, OpenAPIRunner } from '@opas/core';
 import AppPlugin from '@opas/plugin-app';
+import { app, paths, repo } from '@pixas/common';
+import '@pixas/common/lib/env';
 import chalk from 'chalk';
 import { program } from 'commander';
 import path from 'node:path';
 import signale from 'signale';
-import { app, repo, paths } from '@pixas/common';
 import { DtsModule } from '../types';
 
 program
