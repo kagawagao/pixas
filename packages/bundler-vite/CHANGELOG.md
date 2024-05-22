@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.0](https://github.com/kagawagao/pixas/compare/v0.3.0...v0.4.0) (2024-05-22)
+
+### Features
+
+- support specific env use --env ([bffe9d0](https://github.com/kagawagao/pixas/commit/bffe9d0b7675b12d4ee832c2c2595e6508ff9d67))
+
 ## [0.3.0](https://github.com/kagawagao/pixas/compare/v0.2.1...v0.3.0) (2024-05-22)
 
 **Note:** Version bump only for package @pixas/bundler-vite
