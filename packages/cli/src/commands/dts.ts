@@ -70,7 +70,8 @@ program
           }),
       );
     } catch (error) {
-      signale.warn(`${namespace} generate failed`);
+      console.error(error);
+      // signale.warn(`${namespace} generate failed`);
     }
     console.log();
     signale.complete(chalk.greenBright('generate dts complete'));
