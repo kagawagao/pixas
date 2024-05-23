@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/kagawagao/pixas/compare/v0.4.1...v0.5.0) (2024-05-23)
+
+### Features
+
+- **cli:** print dts generate error ([8dc7d05](https://github.com/kagawagao/pixas/commit/8dc7d05e618e8dfdbeb93e3a2314479977e24603))
+
+### Chores
+
+- lock commander version ([f85013b](https://github.com/kagawagao/pixas/commit/f85013bc47163facbb50693d03c46017ca5a6936))
+- update deps ([c8a6500](https://github.com/kagawagao/pixas/commit/c8a650086d50d4fca10dd2f85663e67d442a4a8a))
+
 ## [0.4.1](https://github.com/kagawagao/pixas/compare/v0.4.0...v0.4.1) (2024-05-22)
 
 ### Bug Fixes
