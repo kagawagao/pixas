@@ -13,3 +13,4 @@ updates:
       - dependencies
     ignore:
       - dependency-name: "chalk"
+      - dependency-name: "commander"
