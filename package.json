@@ -6,7 +6,8 @@
   "workspaces": [
     "packages/*",
     "templates/*",
-    "examples/*"
+    "examples/*",
+    "site"
   ],
   "scripts": {
     "prelint": "npm run build",
