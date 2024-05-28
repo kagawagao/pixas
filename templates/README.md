@@ -4,4 +4,4 @@
 
 ## List of templates
 
-<!-- TODO: add template list -->
+- [react-ts-template](./react-ts-template/): a simple react-typescript web app template

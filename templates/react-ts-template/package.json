@@ -1,0 +1,46 @@
+{
+  "name": "@pixas/react-ts-template",
+  "version": "0.5.0",
+  "description": "react typescript application template",
+  "author": "kagawa <kingsongao1221@gmail.com>",
+  "homepage": "https://github.com/kagawagao/pixas#readme",
+  "license": "MIT",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagawagao/pixas.git"
+  },
+  "scripts": {
+    "dev": "pixas dev",
+    "build": "pixas build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@pixas/babel-preset-app": "^0.5.0",
+    "@pixas/bundler-webpack": "^0.5.0",
+    "@pixas/cli": "^0.5.0",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/kagawagao/pixas/issues"
+  }
+}
