@@ -1,10 +1,10 @@
-import { srcDir, publicDir, workDir } from './paths';
-import path from 'node:path';
 import fs from 'fs-extra';
+import path from 'node:path';
 import prettier from 'prettier';
 import { formatGlobalVars } from '../env';
 import { isMonoRepo } from '../utils/repo';
 import { config as app } from './app';
+import { publicDir, srcDir, workDir } from './paths';
 
 import { isNil } from 'lodash';
 import { getLoadedEnvs, getSharedEnvs } from '../env/base';
@@ -148,8 +148,6 @@ export async function writeDefinitionFile(filepath, content) {
   });
 }
 
-writeDefinitionFile(globalDefinitionFilePath, globalDefinitionsContent);
-
 export const getRuntimeGlobalVarsContent = async () => {
   const prettierConfig = await prettier.resolveConfig(configFilePath);
 
@@ -159,10 +157,15 @@ export const getRuntimeGlobalVarsContent = async () => {
   });
 };
 
-const isUnderMono = isMonoRepo(path.resolve(workDir, '../../'));
+const monoRepoBaseDir = path.resolve(workDir, '../../');
+const isUnderMono = isMonoRepo(monoRepoBaseDir);
+const isMonoRepoRoot = isMonoRepo(workDir);
+
+if (!isMonoRepoRoot) {
+  writeDefinitionFile(globalDefinitionFilePath, globalDefinitionsContent);
+}
 
 if (isUnderMono) {
-  const monoRepoBaseDir = path.resolve(workDir, '../../');
   const sharedDir = path.resolve(monoRepoBaseDir, 'packages/shared');
   if (fs.existsSync(sharedDir)) {
     const sharedGlobalDefinitionFilePath = path.resolve(monoRepoBaseDir, sharedDir, 'globals.d.ts');
