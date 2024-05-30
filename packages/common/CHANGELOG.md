@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/kagawagao/pixas/compare/v0.5.0...v0.6.0) (2024-05-30)
+
+### Bug Fixes
+
+- **common:** fix global definition file generate error ([8794e1f](https://github.com/kagawagao/pixas/commit/8794e1f6182de4fcdf21dada394de5a1c38d38e8))
+
 ## [0.5.0](https://github.com/kagawagao/pixas/compare/v0.4.1...v0.5.0) (2024-05-23)
 
 **Note:** Version bump only for package @pixas/common
