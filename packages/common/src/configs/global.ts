@@ -103,7 +103,7 @@ export const getGlobalConfig = () => {
   };
 };
 
-const { compileGlobalVars, runtimeGlobalVars, globalDefinitions, sharedGlobalDefinitions } = getGlobalConfig();
+const { compileGlobalVars, globalDefinitions, sharedGlobalDefinitions } = getGlobalConfig();
 
 const basicDefinitionContent =
   app.mode === 'spa'
@@ -151,7 +151,7 @@ export async function writeDefinitionFile(filepath, content) {
 export const getRuntimeGlobalVarsContent = async () => {
   const prettierConfig = await prettier.resolveConfig(configFilePath);
 
-  return prettier.format(formatGlobalVars(runtimeGlobalVars, 'js'), {
+  return prettier.format(formatGlobalVars(getGlobalConfig().runtimeGlobalVars, 'js'), {
     ...prettierConfig,
     parser: 'babel',
   });
