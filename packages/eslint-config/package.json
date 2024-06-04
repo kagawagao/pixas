@@ -39,7 +39,7 @@
     "eslint-config-standard-jsx": "^11.0.0",
     "eslint-config-standard-react": "^13.0.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-n": "^17.7.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.21.5",
