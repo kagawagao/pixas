@@ -28,10 +28,19 @@ npm install -D @pixas/cli
 
 **Note**: you need to install the corresponding bundler package, such as `@pixas/bundler-webpack`.
 
-Currently Supported Bundlers
+Currently Supported Bundlers:
 
-- `webpack`: `@pixas/bundler-webpack`
-- `vite`: `@pixas/bundler-vite`
+- `webpack`
+
+  ```bash
+  npm install -D @pixas/bundler-webpack
+  ```
+
+- `vite`
+
+  ```bash
+  npm install -D @pixas/bundler-vite
+  ```
 
 ### Usage
 
