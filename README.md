@@ -113,7 +113,7 @@ export default config;
 
 ## DTS
 
-`pixas` support generate request client code with open api spec, both v2 and v3 are supported. it used [`opas`](https://github.com/kagawagao/opas) under the hood, for more details, see [opas](https://github.com/kagawagao/opas), or you can use `opas` directly.
+`pixas` support generate request client code with open api spec, both v2 and v3 are supported, it is based on [`opas`](https://github.com/kagawagao/opas), for more details, see [`opas`](https://github.com/kagawagao/opas), or you can use `opas` directly.
 
 ### Usage
 
