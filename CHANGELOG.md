@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/kagawagao/pixas/compare/v0.6.0...v0.6.1) (2024-06-04)
+
+### Bug Fixes
+
+- **common:** fix runtime variables generate ([b04a77e](https://github.com/kagawagao/pixas/commit/b04a77e10279a782e5f0bdde742bfec49bf89328))
+
+### Chores
+
+- **deps:** bump @opas/core from 0.6.3 to 0.6.5 ([#31](https://github.com/kagawagao/pixas/issues/31)) ([f8fe10f](https://github.com/kagawagao/pixas/commit/f8fe10fb6107899f6a4292cbcb0a01175e24c02b))
+- **deps:** bump @opas/plugin-app from 0.6.3 to 0.6.5 ([#38](https://github.com/kagawagao/pixas/issues/38)) ([1687ffb](https://github.com/kagawagao/pixas/commit/1687ffb9ef6a1b5f8b5eb67ecfa4b9864518fc7e))
+- **deps:** bump @pmmmwh/react-refresh-webpack-plugin ([#36](https://github.com/kagawagao/pixas/issues/36)) ([ddb28ad](https://github.com/kagawagao/pixas/commit/ddb28ada8ac502b2ec1b8475b5cd7c03468a6c41))
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.10.0 to 7.11.0 ([#33](https://github.com/kagawagao/pixas/issues/33)) ([30c0be6](https://github.com/kagawagao/pixas/commit/30c0be6727a890eccd68e688f466e8b4ee9c3f79))
+- **deps:** bump @typescript-eslint/parser from 7.10.0 to 7.11.0 ([#34](https://github.com/kagawagao/pixas/issues/34)) ([62612e1](https://github.com/kagawagao/pixas/commit/62612e14db360289accb47e1a9260178fb86fb72))
+- **deps:** bump @vitejs/plugin-vue from 5.0.4 to 5.0.5 ([#35](https://github.com/kagawagao/pixas/issues/35)) ([bf1f7da](https://github.com/kagawagao/pixas/commit/bf1f7dac1070454fdb5d7915d01a4e4922bd0887))
+- **deps:** bump eslint-plugin-promise from 6.1.1 to 6.2.0 ([#29](https://github.com/kagawagao/pixas/issues/29)) ([50b9e55](https://github.com/kagawagao/pixas/commit/50b9e5577dbe09862affbcecfe22819de11b3622))
+- **deps:** bump eslint-plugin-react from 7.34.1 to 7.34.2 ([#32](https://github.com/kagawagao/pixas/issues/32)) ([2e58c9b](https://github.com/kagawagao/pixas/commit/2e58c9b62eddf5275302f0e62ed42a3d73a0a04b))
+- **deps:** bump prettier from 3.2.5 to 3.3.0 ([#30](https://github.com/kagawagao/pixas/issues/30)) ([6fe9208](https://github.com/kagawagao/pixas/commit/6fe92088eaab68f5bc25ccfc84419e6d4a9b7946))
+- **deps:** bump stylelint from 16.6.0 to 16.6.1 ([#37](https://github.com/kagawagao/pixas/issues/37)) ([4cb67d0](https://github.com/kagawagao/pixas/commit/4cb67d0e52047ca8cec8fe1b4d730a1133d3903c))
+- **deps:** bump vite from 5.2.11 to 5.2.12 ([#28](https://github.com/kagawagao/pixas/issues/28)) ([45e8146](https://github.com/kagawagao/pixas/commit/45e814624e5112b51990193a709733a5078d67da))
+
 ## [0.6.0](https://github.com/kagawagao/pixas/compare/v0.5.0...v0.6.0) (2024-05-30)
 
 ### Features
