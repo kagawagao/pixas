@@ -1,4 +1,4 @@
-import type { AppConfig } from 'pixas';
+import type { AppConfig } from '@pixas/cli';
 
 const config: AppConfig = {
   name: 'vue-app',

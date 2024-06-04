@@ -1,4 +1,4 @@
-import { AppConfig } from 'pixas';
+import { AppConfig } from '@pixas/cli';
 
 const config: AppConfig = {
   name: 'react-app',
