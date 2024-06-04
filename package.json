@@ -14,7 +14,9 @@
     "lint": "eslint . --ext=.js,.ts  --fix",
     "build": "lerna run build",
     "release": "lerna publish --conventional-commits",
-    "prepare": "husky"
+    "prepare": "husky",
+    "site:start": "lerna run start --scope @pixas/site",
+    "site:build": "lerna run build --scope @pixas/site"
   },
   "author": "kagawa <kingsongao1221@gmail.com>",
   "license": "MIT",
