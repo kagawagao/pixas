@@ -20,7 +20,25 @@ export interface DevProgramOptions extends Omit<StartOptions, 'host'> {
 program
   .usage('[options]')
   .option('-i, --ip [ip]', 'host to use', '0.0.0.0')
-  .option('-p, --port [port]', 'port to use', parseInt, 3000)
+  .option(
+    '-p, --port [port]',
+    'port to use',
+    (v) => {
+      const parsedV = parseInt(v);
+      if (isNaN(parsedV)) {
+        const portFromEnv = +process.env.PORT;
+
+        if (isNaN(portFromEnv)) {
+          return 3000;
+        } else {
+          return portFromEnv;
+        }
+      } else {
+        return parsedV;
+      }
+    },
+    3000,
+  )
   .option('-b, --bundler [bundler]', 'bundler to use', app.config.bundler || 'webpack')
   .option('-e, --env [env]', 'env to use')
   .action(async () => {
