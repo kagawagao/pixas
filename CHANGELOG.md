@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/kagawagao/pixas/compare/v0.6.1...v0.6.2) (2024-06-05)
+
+### Bug Fixes
+
+- fix optional deps version ([b78d971](https://github.com/kagawagao/pixas/commit/b78d9710b403729a26902fead01dc68866aa04b5))
+
+### Chores
+
+- **deps:** bump eslint-plugin-n from 16.6.2 to 17.7.0 ([#9](https://github.com/kagawagao/pixas/issues/9)) ([5fdb373](https://github.com/kagawagao/pixas/commit/5fdb37366909817fdf8dbde82289fd4d52be6726))
+
+### Docs
+
+- update README.md ([c91dc43](https://github.com/kagawagao/pixas/commit/c91dc434c568b2cd182889d786949a6f299e9501))
+- update README.md ([37619b8](https://github.com/kagawagao/pixas/commit/37619b82c4fdf1bf7ad7b23507bca079e1e60f5e))
+- update README.md ([845206d](https://github.com/kagawagao/pixas/commit/845206d6ce33c7d50c0aca5df357727abf580fe7))
+
 ## [0.6.1](https://github.com/kagawagao/pixas/compare/v0.6.0...v0.6.1) (2024-06-04)
 
 ### Bug Fixes

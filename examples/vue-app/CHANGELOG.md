@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/kagawagao/pixas/compare/v0.6.1...v0.6.2) (2024-06-05)
+
+### Docs
+
+- update README.md ([845206d](https://github.com/kagawagao/pixas/commit/845206d6ce33c7d50c0aca5df357727abf580fe7))
+
 ## [0.6.1](https://github.com/kagawagao/pixas/compare/v0.6.0...v0.6.1) (2024-06-04)
 
 **Note:** Version bump only for package @pixas/vue-app

@@ -1,6 +1,6 @@
 {
   "name": "@pixas/cli",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "front end develop toolkit",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -39,7 +39,7 @@
     "@pixas/babel-preset-app": "^0.6.0",
     "@pixas/bundler-base": "^0.6.1",
     "@pixas/common": "^0.6.1",
-    "@pixas/eslint-config": "^0.6.0",
+    "@pixas/eslint-config": "^0.6.2",
     "@pixas/prettier-config": "^0.6.0",
     "@pixas/stylelint-config": "^0.6.0",
     "chalk": "^4.1.2",

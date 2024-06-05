@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/kagawagao/pixas/compare/v0.6.1...v0.6.2) (2024-06-05)
+
+### Chores
+
+- **deps:** bump eslint-plugin-n from 16.6.2 to 17.7.0 ([#9](https://github.com/kagawagao/pixas/issues/9)) ([5fdb373](https://github.com/kagawagao/pixas/commit/5fdb37366909817fdf8dbde82289fd4d52be6726))
+
 ## [0.6.0](https://github.com/kagawagao/pixas/compare/v0.5.0...v0.6.0) (2024-05-30)
 
 **Note:** Version bump only for package @pixas/eslint-config

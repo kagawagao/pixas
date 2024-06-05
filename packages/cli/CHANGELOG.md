@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/kagawagao/pixas/compare/v0.6.1...v0.6.2) (2024-06-05)
+
+### Bug Fixes
+
+- fix optional deps version ([b78d971](https://github.com/kagawagao/pixas/commit/b78d9710b403729a26902fead01dc68866aa04b5))
+
+### Docs
+
+- update README.md ([37619b8](https://github.com/kagawagao/pixas/commit/37619b82c4fdf1bf7ad7b23507bca079e1e60f5e))
+
 ## [0.6.1](https://github.com/kagawagao/pixas/compare/v0.6.0...v0.6.1) (2024-06-04)
 
 **Note:** Version bump only for package @pixas/cli
