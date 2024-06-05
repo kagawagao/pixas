@@ -69,8 +69,8 @@
     "@types/webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
-    "@pixas/bundler-vite": "^0.0.0",
-    "@pixas/bundler-webpack": "^0.0.0"
+    "@pixas/bundler-vite": "*",
+    "@pixas/bundler-webpack": "*"
   },
   "peerDependenciesMeta": {
     "@pixas/bundler-webpack": {
