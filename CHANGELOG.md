@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.4](https://github.com/kagawagao/pixas/compare/v0.6.3...v0.6.4) (2024-06-05)
+
+### Bug Fixes
+
+- **cli:** fix port parse from env ([19f8bf0](https://github.com/kagawagao/pixas/commit/19f8bf057ebac52e424a1f76c23b8c2140d541c6))
+
 ## [0.6.3](https://github.com/kagawagao/pixas/compare/v0.6.2...v0.6.3) (2024-06-05)
 
 ### Bug Fixes
