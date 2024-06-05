@@ -1,6 +1,6 @@
 {
   "name": "@pixas/react-ts-template",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "react typescript application template",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "https://github.com/kagawagao/pixas#readme",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@pixas/babel-preset-app": "^0.6.0",
     "@pixas/bundler-webpack": "^0.6.1",
-    "@pixas/cli": "^0.6.2",
+    "@pixas/cli": "^0.6.3",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0"
   },

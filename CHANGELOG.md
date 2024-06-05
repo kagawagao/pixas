@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/kagawagao/pixas/compare/v0.6.2...v0.6.3) (2024-06-05)
+
+### Bug Fixes
+
+- **cli:** fix option parse error ([dd0d11c](https://github.com/kagawagao/pixas/commit/dd0d11c3310d3499e815731ec1638f0db7f4ee29))
+
 ## [0.6.2](https://github.com/kagawagao/pixas/compare/v0.6.1...v0.6.2) (2024-06-05)
 
 ### Bug Fixes
