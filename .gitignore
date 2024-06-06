@@ -119,6 +119,7 @@ lib
 
 # typings
 *.d.ts
+!shims.d.ts
 
 # lerna
 lerna-debug.log

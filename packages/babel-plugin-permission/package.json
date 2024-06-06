@@ -1,0 +1,45 @@
+{
+  "name": "@pixas/babel-plugin-permission",
+  "version": "0.6.4",
+  "description": "babel plugin for extract permission code",
+  "author": "kagawagao <kingsongao1221@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest",
+    "preversion": "npm run build",
+    "build": "tsc --outDir lib --module commonjs --target es5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/helper-plugin-utils": "^7.18.6",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/types": "^7.18.7"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@pixas/babel-preset-lib",
+        {
+          "targets": {
+            "node": 12
+          }
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@pixas/babel-preset-lib": "^0.6.0"
+  }
+}
