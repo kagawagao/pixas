@@ -36,3 +36,13 @@ module.exports = {
   ],
 };
 ```
+
+## Options
+
+- `onPermissionExtracted` (optional): function to be called when permission extracted
+- `properties` (optional): property names to extract permission
+- `removeProperties` (optional): property names to remove from permission
+- `symbols` (optional): symbol names to extract permission
+  - `single` (optional): symbol names to extract permission from single symbol, default is `['definePermission']`
+  - `multiple` (optional): symbol names to extract permission from multiple symbols, default is `['definePermissions']`
+  - `components` (optional): symbol names to extract permission from components, default is `['UserPermissionAuthorize']`

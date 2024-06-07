@@ -6,14 +6,13 @@ import {
   createPermissionDescriptor,
   evaluatePermissionDescriptor,
   getPermissionDescriptorKey,
-  shouldRemoveProperties,
   storePermission,
   tagAsExtracted,
   wasExtracted,
 } from '../utils';
 
 export const visitor: VisitNodeFunction<PermissionPluginPass, t.JSXOpeningElement> = function (path) {
-  const { componentNames, permissions } = this;
+  const { componentNames, permissions, props: descriptorKeys, removeProps: shouldRemoveProperties } = this;
   if (wasExtracted(path)) {
     return;
   }
@@ -32,18 +31,14 @@ export const visitor: VisitNodeFunction<PermissionPluginPass, t.JSXOpeningElemen
         attr.get('name') as NodePath<t.JSXIdentifier>,
         attr.get('value') as NodePath<t.StringLiteral>,
       ]),
+      descriptorKeys,
     );
 
     // Evaluate the Permission Descriptor values in a JSX
     // context, then store it.
-    const descriptor = evaluatePermissionDescriptor(descriptorPath);
+    const descriptor = evaluatePermissionDescriptor(descriptorPath, descriptorKeys);
 
-    if (!descriptor.id && !descriptor.name) {
-      // pass through
-      return;
-    }
-
-    storePermission(descriptor, path, permissions);
+    storePermission(descriptor, permissions);
 
     // remove extra properties
     for (const attr of attributes) {

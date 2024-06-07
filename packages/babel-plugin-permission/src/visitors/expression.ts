@@ -1,11 +1,10 @@
 import { NodePath } from '@babel/core';
 import { VisitNodeFunction } from '@babel/traverse';
 import * as t from '@babel/types';
-import { ExtractedPermissionDescriptor, PermissionPluginPass } from '../types';
+import { PermissionPluginPass } from '../types';
 import {
   createPermissionDescriptor,
   evaluatePermissionDescriptor,
-  shouldRemoveProperties,
   storePermission,
   tagAsExtracted,
   wasExtracted,
@@ -40,7 +39,13 @@ export const visitor: VisitNodeFunction<PermissionPluginPass, t.CallExpression> 
   if (wasExtracted(path)) {
     return;
   }
-  const { permissions, singleFunctionNames, multipleFunctionNames } = this;
+  const {
+    permissions,
+    singleFunctionNames,
+    multipleFunctionNames,
+    props: descriptorKeys,
+    removeProps: shouldRemoveProperties,
+  } = this;
   const callee = path.get('callee');
   const args = path.get('arguments');
 
@@ -57,11 +62,12 @@ export const visitor: VisitNodeFunction<PermissionPluginPass, t.CallExpression> 
       properties.map(
         (prop) => [prop.get('key'), prop.get('value')] as [NodePath<t.Identifier>, NodePath<t.StringLiteral>],
       ),
+      descriptorKeys,
     );
 
     // Evaluate the Permission Descriptor values, then store it.
-    const descriptor = evaluatePermissionDescriptor(descriptorPath);
-    storePermission(descriptor, permissionDescriptor, permissions as ExtractedPermissionDescriptor[]);
+    const descriptor = evaluatePermissionDescriptor(descriptorPath, descriptorKeys);
+    storePermission(descriptor, permissions);
 
     shouldRemoveProperties.forEach((name) => {
       const property = properties.find((prop) => {

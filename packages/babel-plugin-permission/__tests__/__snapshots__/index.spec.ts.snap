@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel-plugin-user-permission CustomUserPermissionAuthorize 1`] = `
+{
+  "code": ""use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _userPermission = require("@pixas/user-permission");
+(0, _userPermission.definePermission)({
+  code: 'user-permission-test-define'
+});
+var _default = () => /*#__PURE__*/React.createElement(_userPermission.CustomUserPermissionAuthorize, {
+  code: "user-permission-test"
+}, /*#__PURE__*/React.createElement("button", null, "test"));
+exports.default = _default;",
+  "data": {
+    "permissions": [
+      {
+        "code": "user-permission-test-define",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "d",
+        ],
+        "name": "用户权限定义测试",
+        "parent": "",
+        "type": "",
+        "uris": "",
+        "value": "",
+      },
+      {
+        "code": "user-permission-test",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "d",
+        ],
+        "name": "用户权限测试",
+        "parent": "",
+        "type": "",
+        "uris": "",
+        "value": "",
+      },
+    ],
+  },
+}
+`;
+
+exports[`babel-plugin-user-permission UserPermissionAuthorize 1`] = `
+{
+  "code": ""use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _userPermission = require("@pixas/user-permission");
+(0, _userPermission.definePermission)({
+  code: 'user-permission-test-define'
+});
+var _default = () => /*#__PURE__*/React.createElement(_userPermission.UserPermissionAuthorize, {
+  code: "user-permission-test"
+}, /*#__PURE__*/React.createElement("button", null, "test"));
+exports.default = _default;",
+  "data": {
+    "permissions": [
+      {
+        "code": "user-permission-test-define",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "d",
+        ],
+        "name": "用户权限定义测试",
+        "parent": "",
+        "type": "",
+        "uris": "",
+        "value": "",
+      },
+      {
+        "code": "user-permission-test",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "d",
+        ],
+        "name": "用户权限测试",
+        "parent": "",
+        "type": "",
+        "uris": "",
+        "value": "",
+      },
+    ],
+  },
+}
+`;
+
+exports[`babel-plugin-user-permission customDefinePermission 1`] = `
+{
+  "code": ""use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UsedWithDefinedPermission = void 0;
+var _userPermission = require("@pixas/user-permission");
+var UsedWithDefinedPermission = () => {
+  var permission = (0, _userPermission.customDefinePermission)({
+    code: 'user-permission-test-define'
+  });
+  return /*#__PURE__*/React.createElement(_userPermission.UserPermissionAuthorize, permission, /*#__PURE__*/React.createElement("button", null, "test"));
+};
+exports.UsedWithDefinedPermission = UsedWithDefinedPermission;",
+  "data": {
+    "permissions": [
+      {
+        "code": "user-permission-test-define",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "a",
+          "b",
+        ],
+        "name": "用户权限定义测试",
+        "parent": "",
+        "type": "MENU",
+        "uris": "",
+        "value": "",
+      },
+    ],
+  },
+}
+`;
+
+exports[`babel-plugin-user-permission customDefinePermissions 1`] = `
+{
+  "code": ""use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UsedWithDefinedPermissions = void 0;
+var _userPermission = require("@pixas/user-permission");
+var UsedWithDefinedPermissions = () => {
+  var permissions = (0, _userPermission.definePermissions)({
+    btn: {
+      code: 'user-permission-test-define-permissions'
+    }
+  });
+  return /*#__PURE__*/React.createElement(_userPermission.UserPermissionAuthorize, permissions.btn, /*#__PURE__*/React.createElement("button", null, "test"));
+};
+exports.UsedWithDefinedPermissions = UsedWithDefinedPermissions;",
+  "data": {
+    "permissions": [
+      {
+        "code": "user-permission-test-define-permissions",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "c",
+        ],
+        "name": "用户权限定义测试",
+        "parent": "",
+        "type": "",
+        "uris": "",
+        "value": "",
+      },
+    ],
+  },
+}
+`;
+
+exports[`babel-plugin-user-permission definePermission 1`] = `
+{
+  "code": ""use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UsedWithDefinedPermission = void 0;
+var _userPermission = require("@pixas/user-permission");
+var UsedWithDefinedPermission = () => {
+  var permission = (0, _userPermission.definePermission)({
+    code: 'user-permission-test-define'
+  });
+  return /*#__PURE__*/React.createElement(_userPermission.UserPermissionAuthorize, permission, /*#__PURE__*/React.createElement("button", null, "test"));
+};
+exports.UsedWithDefinedPermission = UsedWithDefinedPermission;",
+  "data": {
+    "permissions": [
+      {
+        "code": "user-permission-test-define",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "a",
+          "b",
+        ],
+        "name": "用户权限定义测试",
+        "parent": "",
+        "type": "MENU",
+        "uris": "",
+        "value": "",
+      },
+    ],
+  },
+}
+`;
+
+exports[`babel-plugin-user-permission definePermissions 1`] = `
+{
+  "code": ""use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UsedWithDefinedPermissions = void 0;
+var _userPermission = require("@pixas/user-permission");
+var UsedWithDefinedPermissions = () => {
+  var permissions = (0, _userPermission.customDefinePermissions)({
+    btn: {
+      code: 'user-permission-test-define-permissions',
+      name: '用户权限定义测试',
+      description: '用户权限',
+      groups: ['c']
+    }
+  });
+  return /*#__PURE__*/React.createElement(_userPermission.UserPermissionAuthorize, permissions.btn, /*#__PURE__*/React.createElement("button", null, "test"));
+};
+exports.UsedWithDefinedPermissions = UsedWithDefinedPermissions;",
+  "data": {
+    "permissions": [],
+  },
+}
+`;

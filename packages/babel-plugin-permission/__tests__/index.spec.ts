@@ -45,11 +45,12 @@ function transformAndCheck(fn: string, opts: Options = {}) {
     },
   });
   if (transformed) {
+    console.log(permissions);
     const { code } = transformed;
     expect({
       data: { permissions },
       code: code?.trim(),
-    });
+    }).toMatchSnapshot();
   }
 }
 

@@ -2,7 +2,7 @@ import { customDefinePermission, UserPermissionAuthorize } from '@pixas/user-per
 
 export const UsedWithDefinedPermission = () => {
   const permission = customDefinePermission({
-    id: 'user-permission-test-define',
+    code: 'user-permission-test-define',
     name: '用户权限定义测试',
     description: '用户权限',
     type: 'MENU',
