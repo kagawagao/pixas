@@ -61,17 +61,11 @@ export function createPermissionDescriptor(
 export function evaluatePermissionDescriptor(descriptorPath: PermissionDescriptorPath, properties: string[]) {
   const descriptor: Partial<PermissionDescriptor> = {};
 
-  console.log(properties);
-
   properties.forEach((key) => {
     const value = getPermissionDescriptorValue(descriptorPath[key]);
 
-    console.log(key, value);
-
     descriptor[key] = value;
   });
-
-  console.log(descriptor);
 
   return descriptor;
 }
