@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/kagawagao/pixas/compare/v0.7.3...v0.8.0) (2024-06-11)
+
+### Features
+
+- **bundler-webpack:** disable overlay as default ([fe04e0b](https://github.com/kagawagao/pixas/commit/fe04e0bc8014760ff1a55ab459f33cc6c8f0a0e8))
+
+### Chores
+
+- **deps-dev:** bump @babel/cli from 7.24.6 to 7.24.7 ([#53](https://github.com/kagawagao/pixas/issues/53)) ([1d51eac](https://github.com/kagawagao/pixas/commit/1d51eac17d4f3bbadfaeee8fc413fef15d86f212))
+- **deps-dev:** bump @types/lodash from 4.17.4 to 4.17.5 ([#56](https://github.com/kagawagao/pixas/issues/56)) ([eeebb0f](https://github.com/kagawagao/pixas/commit/eeebb0f8a5c6ad3df387513f43ad8a5a4976be07))
+- **deps:** bump @babel/core from 7.24.5 to 7.24.7 ([#54](https://github.com/kagawagao/pixas/issues/54)) ([a75ae43](https://github.com/kagawagao/pixas/commit/a75ae43c15a90452beae61d941bcb5885e1d2347))
+- **deps:** bump @babel/eslint-parser from 7.24.6 to 7.24.7 ([#46](https://github.com/kagawagao/pixas/issues/46)) ([61fd266](https://github.com/kagawagao/pixas/commit/61fd266a43eaca99906c24c6c5799b6fb5b1bffd))
+- **deps:** bump @babel/helper-plugin-utils from 7.24.6 to 7.24.7 ([#40](https://github.com/kagawagao/pixas/issues/40)) ([c9b3d82](https://github.com/kagawagao/pixas/commit/c9b3d827724b3ec45dbd5c65af316aa43591ffbd))
+- **deps:** bump @babel/plugin-syntax-jsx from 7.24.6 to 7.24.7 ([#39](https://github.com/kagawagao/pixas/issues/39)) ([d366f72](https://github.com/kagawagao/pixas/commit/d366f72dce948c384126fe9ec03f96dddb562a41))
+- **deps:** bump @babel/plugin-transform-runtime from 7.24.6 to 7.24.7 ([#57](https://github.com/kagawagao/pixas/issues/57)) ([a253991](https://github.com/kagawagao/pixas/commit/a25399154d3639da569493e42a79a962cd9a0fe2))
+- **deps:** bump @babel/preset-env from 7.24.6 to 7.24.7 ([#51](https://github.com/kagawagao/pixas/issues/51)) ([81ccd32](https://github.com/kagawagao/pixas/commit/81ccd32c42aac9acb7c96f400130a9eae5a60ed5))
+- **deps:** bump @babel/preset-react from 7.24.6 to 7.24.7 ([#43](https://github.com/kagawagao/pixas/issues/43)) ([8183ac5](https://github.com/kagawagao/pixas/commit/8183ac5c67df2c35f0197cb9d69e1a88d80ecc74))
+- **deps:** bump @babel/preset-typescript from 7.24.6 to 7.24.7 ([#50](https://github.com/kagawagao/pixas/issues/50)) ([6c8898f](https://github.com/kagawagao/pixas/commit/6c8898f6eed8465eeaa9d594a3010a0bd4109bf2))
+- **deps:** bump @babel/runtime from 7.24.6 to 7.24.7 ([#55](https://github.com/kagawagao/pixas/issues/55)) ([c74e1e5](https://github.com/kagawagao/pixas/commit/c74e1e55d4256c34f49c502298ef98c46bbc5fc9))
+- **deps:** bump @babel/types from 7.24.6 to 7.24.7 ([#45](https://github.com/kagawagao/pixas/issues/45)) ([14fadd0](https://github.com/kagawagao/pixas/commit/14fadd0fcbecc27661f36c76f90678f19f068f3a))
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.11.0 to 7.12.0 ([#47](https://github.com/kagawagao/pixas/issues/47)) ([173a94e](https://github.com/kagawagao/pixas/commit/173a94e495dbbed00304de72f060cd058c4138cb))
+- **deps:** bump @typescript-eslint/parser from 7.11.0 to 7.12.0 ([#44](https://github.com/kagawagao/pixas/issues/44)) ([02b2c79](https://github.com/kagawagao/pixas/commit/02b2c792db43493fb4e48f2160801de8fb7ccfd6))
+- **deps:** bump @vitejs/plugin-react from 4.3.0 to 4.3.1 ([#52](https://github.com/kagawagao/pixas/issues/52)) ([e5c80d3](https://github.com/kagawagao/pixas/commit/e5c80d3b6099e803741afceef466dd6f02f7763c))
+- **deps:** bump eslint-plugin-n from 17.7.0 to 17.8.1 ([#42](https://github.com/kagawagao/pixas/issues/42)) ([810a4a3](https://github.com/kagawagao/pixas/commit/810a4a3b401cb63dda7ab177e0d0b1041c006915))
+- **deps:** bump json-server from 1.0.0-beta.0 to 1.0.0-beta.1 ([#49](https://github.com/kagawagao/pixas/issues/49)) ([c806fc2](https://github.com/kagawagao/pixas/commit/c806fc26a47a145f4f7291e4450305c59db94127))
+- **deps:** bump prettier from 3.3.0 to 3.3.1 ([#48](https://github.com/kagawagao/pixas/issues/48)) ([f8f08e4](https://github.com/kagawagao/pixas/commit/f8f08e411f49ad21d48e4c53c4e586a402a83889))
+- **deps:** bump vite from 5.2.12 to 5.2.13 ([#41](https://github.com/kagawagao/pixas/issues/41)) ([044c49f](https://github.com/kagawagao/pixas/commit/044c49f661fe46a1f8df9579a065ef588ead3f2d))
+
 ## [0.7.3](https://github.com/kagawagao/pixas/compare/v0.7.2...v0.7.3) (2024-06-07)
 
 ### Bug Fixes

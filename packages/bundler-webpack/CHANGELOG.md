@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/kagawagao/pixas/compare/v0.7.3...v0.8.0) (2024-06-11)
+
+### Features
+
+- **bundler-webpack:** disable overlay as default ([fe04e0b](https://github.com/kagawagao/pixas/commit/fe04e0bc8014760ff1a55ab459f33cc6c8f0a0e8))
+
 ## [0.7.0](https://github.com/kagawagao/pixas/compare/v0.6.4...v0.7.0) (2024-06-06)
 
 **Note:** Version bump only for package @pixas/bundler-webpack
