@@ -64,7 +64,7 @@ export function evaluatePermissionDescriptor(descriptorPath: PermissionDescripto
   properties.forEach((key) => {
     const value = getPermissionDescriptorValue(descriptorPath[key]);
 
-    descriptor[key] = value?.trim();
+    descriptor[key] = typeof value === 'string' ? value.trim() : value;
   });
 
   return descriptor;
