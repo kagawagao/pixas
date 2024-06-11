@@ -1,6 +1,6 @@
 {
   "name": "@pixas/babel-plugin-permission",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "babel plugin for extract permission code",
   "author": "kagawagao <kingsongao1221@gmail.com>",
   "homepage": "",
