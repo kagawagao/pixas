@@ -136,7 +136,11 @@ const config: Configuration = {
 
 if (DEV) {
   // config.plugins.push(new webpack.HotModuleReplacementPlugin());
-  config.plugins!.push(new ReactRefreshWebpackPlugin());
+  config.plugins!.push(
+    new ReactRefreshWebpackPlugin({
+      overlay: false,
+    }),
+  );
 }
 
 if (PRODUCT) {

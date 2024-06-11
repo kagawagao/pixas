@@ -30,8 +30,8 @@ const createServer = (host: string, port: number, publicPath = '/'): Configurati
   },
   setupExitSignals: true,
   client: {
-    logging: 'info',
-    overlay: true,
+    logging: 'error',
+    overlay: false,
     progress: false,
     webSocketTransport: 'ws',
     webSocketURL: {
