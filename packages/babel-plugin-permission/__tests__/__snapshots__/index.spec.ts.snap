@@ -145,7 +145,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.UsedWithDefinedPermissions = void 0;
 var _userPermission = require("@pixas/user-permission");
 var UsedWithDefinedPermissions = () => {
-  var permissions = (0, _userPermission.definePermissions)({
+  var permissions = (0, _userPermission.customDefinePermissions)({
     btn: {
       code: 'user-permission-test-define-permissions'
     }
@@ -220,17 +220,71 @@ Object.defineProperty(exports, "__esModule", {
 exports.UsedWithDefinedPermissions = void 0;
 var _userPermission = require("@pixas/user-permission");
 var UsedWithDefinedPermissions = () => {
-  var permissions = (0, _userPermission.customDefinePermissions)({
+  var permissions = (0, _userPermission.definePermissions)({
     btn: {
-      code: 'user-permission-test-define-permissions',
-      name: '用户权限定义测试',
-      description: '用户权限',
-      groups: ['c']
+      code: 'user-permission-test-define-permissions'
     }
   });
   return /*#__PURE__*/React.createElement(_userPermission.UserPermissionAuthorize, permissions.btn, /*#__PURE__*/React.createElement("button", null, "test"));
 };
 exports.UsedWithDefinedPermissions = UsedWithDefinedPermissions;",
+  "data": {
+    "permissions": [
+      {
+        "code": "user-permission-test-define-permissions",
+        "data": "",
+        "description": "用户权限",
+        "groups": [
+          "c",
+        ],
+        "name": "用户权限定义测试",
+        "parent": "",
+        "type": "",
+        "uris": "",
+        "value": "",
+      },
+    ],
+  },
+}
+`;
+
+exports[`babel-plugin-user-permission selfDefineUtils 1`] = `
+{
+  "code": ""use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.definePermissions = exports.definePermission = void 0;
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+/**
+ * 权限定义帮助函数
+ * @param permission 权限信息
+ */
+var definePermission = permission => {
+  var createdPermission = _objectSpread({}, permission);
+  if (!createdPermission.type) {
+    createdPermission.type = 'OPERATE';
+  }
+  return createdPermission;
+};
+
+/**
+ * 权限批量定义帮助函数
+ * @param permissions 权限集
+ */
+exports.definePermission = definePermission;
+var definePermissions = definePermissions => {
+  var temp = {};
+  Object.keys(definePermissions).forEach(key => {
+    temp[key] = definePermission(definePermissions[key]);
+  });
+  return temp;
+};
+exports.definePermissions = definePermissions;",
   "data": {
     "permissions": [],
   },

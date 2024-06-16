@@ -90,4 +90,7 @@ describe('babel-plugin-user-permission', () => {
       },
     });
   });
+  test('selfDefineUtils', function () {
+    transformAndCheck('selfDefineUtils');
+  });
 });

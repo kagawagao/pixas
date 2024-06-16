@@ -10,17 +10,11 @@ import {
   wasExtracted,
 } from '../utils';
 
-function assertObjectExpression(
-  path: NodePath<any>,
-  callee: NodePath<t.Expression | t.V8IntrinsicIdentifier>,
-): asserts path is NodePath<t.ObjectExpression> {
+function checkIsObjectExpression(path: NodePath<any>): boolean {
   if (!path || !path.isObjectExpression()) {
-    throw path.buildCodeFrameError(
-      `[User Permission] \`${
-        (callee.get('property') as NodePath<t.Identifier>).node.name
-      }()\` must be called with an object expression with values that are User Permission Descriptors, also defined as object expressions.`,
-    );
+    return false;
   }
+  return true;
 }
 
 function getPermissionsObjectFromExpression(nodePath: NodePath<any>): NodePath<any> {
@@ -54,7 +48,13 @@ export const visitor: VisitNodeFunction<PermissionPluginPass, t.CallExpression> 
    * @param permissionDescriptor Permission Descriptor
    */
   function processPermissionObject(permissionDescriptor: NodePath<t.ObjectExpression>) {
-    assertObjectExpression(permissionDescriptor, callee);
+    const isObjectExpression = checkIsObjectExpression(permissionDescriptor);
+
+    if (!isObjectExpression) {
+      // skip if it's not an object expression
+      tagAsExtracted(path);
+      return;
+    }
 
     const properties = permissionDescriptor.get('properties') as NodePath<t.ObjectProperty>[];
 
@@ -91,7 +91,12 @@ export const visitor: VisitNodeFunction<PermissionPluginPass, t.CallExpression> 
     const firstArgument = args[0];
     const permissionsObj = getPermissionsObjectFromExpression(firstArgument);
 
-    assertObjectExpression(permissionsObj, callee);
+    const isObjectExpression = checkIsObjectExpression(permissionsObj);
+    if (!isObjectExpression) {
+      // skip if it's not an object expression
+      tagAsExtracted(path);
+      return;
+    }
     if (singleFunctionNames.some((name) => callee.isIdentifier({ name }))) {
       processPermissionObject(permissionsObj as NodePath<t.ObjectExpression>);
     } else {

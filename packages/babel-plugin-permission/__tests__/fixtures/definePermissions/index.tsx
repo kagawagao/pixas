@@ -1,7 +1,7 @@
-import { customDefinePermissions, UserPermissionAuthorize } from '@pixas/user-permission';
+import { definePermissions, UserPermissionAuthorize } from '@pixas/user-permission';
 
 export const UsedWithDefinedPermissions = () => {
-  const permissions = customDefinePermissions({
+  const permissions = definePermissions({
     btn: {
       code: 'user-permission-test-define-permissions',
       name: '用户权限定义测试',
