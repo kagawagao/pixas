@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.1](https://github.com/kagawagao/pixas/compare/v0.9.0...v0.9.1) (2024-06-16)
+
+### Bug Fixes
+
+- **babel-plugin-permission:** skip evaluate instead of throw error ([050bdaa](https://github.com/kagawagao/pixas/commit/050bdaa17720283d35805d6849d3f86f31e512af))
+
 ## [0.9.0](https://github.com/kagawagao/pixas/compare/v0.8.1...v0.9.0) (2024-06-16)
 
 ### Features
