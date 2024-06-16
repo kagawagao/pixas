@@ -27,6 +27,9 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
+    babelOptions: {
+      presets: ['@pixas/babel-preset-app'],
+    },
   },
   plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
@@ -56,7 +59,7 @@ module.exports = {
         ecmaFeatures: {
           jsx: true,
         },
-        warnOnUnsupportedTypeScriptVersion: true,
+        warnOnUnsupportedTypeScriptVersion: false,
       },
       extends: [
         'standard',

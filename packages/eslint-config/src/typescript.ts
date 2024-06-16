@@ -2,14 +2,14 @@ module.exports = {
   extends: ['./javascript'],
   overrides: [
     {
-      files: ['**/*.ts'],
+      files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         sourceType: 'module',
         ecmaFeatures: {
           jsx: true,
         },
-        warnOnUnsupportedTypeScriptVersion: true,
+        warnOnUnsupportedTypeScriptVersion: false,
       },
       extends: ['standard', 'prettier', 'plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended'],
       plugins: ['prettier', '@typescript-eslint'],

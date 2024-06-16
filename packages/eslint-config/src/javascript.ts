@@ -17,6 +17,9 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
+    babelOptions: {
+      presets: ['@pixas/babel-preset-app'],
+    },
   },
   plugins: ['prettier'],
   rules: {

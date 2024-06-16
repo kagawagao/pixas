@@ -12,6 +12,17 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
+    babelOptions: {
+      presets: ['@vue/babel-preset-app'],
+      plugins: [
+        [
+          '@babel/plugin-transform-typescript',
+          {
+            isTSX: true,
+          },
+        ],
+      ],
+    },
   },
   extends: ['standard', 'prettier', 'plugin:prettier/recommended', 'plugin:vue/vue3-essential'],
   plugins: ['prettier'],
