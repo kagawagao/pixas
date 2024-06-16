@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.0](https://github.com/kagawagao/pixas/compare/v0.8.1...v0.9.0) (2024-06-16)
+
+### Features
+
+- **eslint:** bundle babel config ([82a9164](https://github.com/kagawagao/pixas/commit/82a9164a4ebe2475a9e84c4921fdf1b3652fb356))
+
 ## [0.8.1](https://github.com/kagawagao/pixas/compare/v0.8.0...v0.8.1) (2024-06-11)
 
 ### Bug Fixes
