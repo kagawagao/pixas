@@ -12,7 +12,7 @@ front end develop toolkit, which support multi bundler(ex: webpack/vite/...) and
 - 📦 **Multi Bundler Support**
   - [x] [`webpack`](https://webpack.js.org)
   - [x] [`vite`](https://vitejs.dev)
-  - [ ] [`mako`](https://makojs.dev)
+  - [x] [`mako`](https://makojs.dev): **Not ready for production yet**
 - 🛠 **Multi Framework Support**
   - [x] [`react`](https://reactjs.org)
   - [x] [`vue`](https://vuejs.org)
