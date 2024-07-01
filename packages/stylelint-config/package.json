@@ -1,6 +1,6 @@
 {
   "name": "@pixas/stylelint-config",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "shared stylelint config used by pixas",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
