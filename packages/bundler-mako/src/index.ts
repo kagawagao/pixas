@@ -1,5 +1,6 @@
 import Bundler, { StartOptions } from '@pixas/bundler-base';
 import { global, paths } from '@pixas/common';
+import { openBrowserWithConfig } from '@pixas/common/lib/utils/open';
 import { build } from '@umijs/mako';
 import ejs from 'ejs';
 import fs from 'fs-extra';
@@ -76,7 +77,10 @@ export default class MakoBundler extends Bundler {
         host: opts.host,
       },
     };
-    this.run(true);
+    await this.run(true);
+    if (opts.open) {
+      openBrowserWithConfig(opts.host, opts.port);
+    }
   };
 
   public build = async () => {

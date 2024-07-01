@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import '@pixas/common/lib/env/dev';
-import { argv } from 'yargs';
-import WebpackDevServer from 'webpack-dev-server';
-import webpack from 'webpack';
-import clearConsole from 'react-dev-utils/clearConsole';
-import openBrowser from 'react-dev-utils/openBrowser';
-import { createCompiler, prepareUrls } from 'react-dev-utils/WebpackDevServerUtils';
-import webpackConfig from '../../config/spa';
-import createServerConfig from '../../config/server';
 import { pkg } from '@pixas/common';
+import { openBrowserWithConfig } from '@pixas/common/lib/utils/open';
+import clearConsole from 'react-dev-utils/clearConsole';
+import { createCompiler, prepareUrls } from 'react-dev-utils/WebpackDevServerUtils';
+import webpack from 'webpack';
+import WebpackDevServer from 'webpack-dev-server';
+import { argv } from 'yargs';
+import createServerConfig from '../../config/server';
+import webpackConfig from '../../config/spa';
 
 const { name: appName } = pkg;
 
@@ -61,7 +61,7 @@ const devServer = new WebpackDevServer(mergedServerConfig, compiler);
     if (isInteractive) {
       clearConsole();
     }
-    openBrowser(urls.localUrlForBrowser);
+    openBrowserWithConfig(host, port, typeof isHttps === 'boolean' ? isHttps : !!mergedServerConfig.https);
     const signals = ['SIGINT', 'SIGTERM'];
     signals.forEach((sig: any) => {
       process.on(sig, () => {

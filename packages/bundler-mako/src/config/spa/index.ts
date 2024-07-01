@@ -1,4 +1,5 @@
 import { paths } from '@pixas/common';
+import { srcDir } from '@pixas/common/lib/configs/paths';
 import { MakoConfig } from '../../types';
 
 const { entryPath, outputDir, publicDir } = paths;
@@ -10,7 +11,7 @@ const config: MakoConfig = {
   clean: true,
   resolve: {
     extensions: ['.ts', '.tsx', '.mjs', '.js', '.jsx', '.json', '.css', '.less'],
-    alias: [['@', 'src']],
+    alias: [['@', srcDir]],
   },
   entry: {
     index: entryPath,
