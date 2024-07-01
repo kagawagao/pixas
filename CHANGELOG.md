@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/kagawagao/pixas/compare/v0.10.0...v0.10.1) (2024-07-01)
+
+### Bug Fixes
+
+- bugfix ([da28caa](https://github.com/kagawagao/pixas/commit/da28caa55818af52fc3edfd8c5e3ac87670805ca))
+
+### Docs
+
+- update README.md ([9ca95af](https://github.com/kagawagao/pixas/commit/9ca95af2a1a21e1c00a61c2780a315801352c3c3))
+
 ## [0.10.0](https://github.com/kagawagao/pixas/compare/v0.9.1...v0.10.0) (2024-07-01)
 
 ### Bug Fixes
