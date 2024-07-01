@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/kagawagao/pixas/compare/v0.9.1...v0.10.0) (2024-07-01)
+
+### Chores
+
+- **deps:** bump @opas/core from 0.6.5 to 0.8.0 ([#60](https://github.com/kagawagao/pixas/issues/60)) ([88825cd](https://github.com/kagawagao/pixas/commit/88825cd4c0dc5a6c8ff65ff867dbe7160a93eb17))
+- **deps:** bump @opas/core from 0.8.0 to 0.9.0 ([#75](https://github.com/kagawagao/pixas/issues/75)) ([f7e9b81](https://github.com/kagawagao/pixas/commit/f7e9b81f409398407ec414d99c53ce2582754207))
+- **deps:** bump @opas/plugin-app from 0.6.5 to 0.8.0 ([#64](https://github.com/kagawagao/pixas/issues/64)) ([d36e7b6](https://github.com/kagawagao/pixas/commit/d36e7b6d00c44f60a7080bdbbf8ab955fa541bb6))
+- **deps:** bump @opas/plugin-app from 0.8.0 to 0.9.0 ([#73](https://github.com/kagawagao/pixas/issues/73)) ([e4ece0e](https://github.com/kagawagao/pixas/commit/e4ece0e2c6a57b92fc395e18eec37aed4479d620))
+
 ## [0.9.0](https://github.com/kagawagao/pixas/compare/v0.8.1...v0.9.0) (2024-06-16)
 
 **Note:** Version bump only for package @pixas/cli

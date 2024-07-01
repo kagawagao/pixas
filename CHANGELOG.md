@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.0](https://github.com/kagawagao/pixas/compare/v0.9.1...v0.10.0) (2024-07-01)
+
+### Bug Fixes
+
+- **bundler-webpack:** fix css modules typings generate ([acc3082](https://github.com/kagawagao/pixas/commit/acc3082ed17bb797d12e55158085798d07cd6583))
+
+### Chores
+
+- **deps-dev:** bump lint-staged from 15.2.5 to 15.2.7 ([#59](https://github.com/kagawagao/pixas/issues/59)) ([fb1041b](https://github.com/kagawagao/pixas/commit/fb1041ba0fe2243a72f4fe9adbc7cd2a7f62bb36))
+- **deps:** bump @opas/core from 0.6.5 to 0.8.0 ([#60](https://github.com/kagawagao/pixas/issues/60)) ([88825cd](https://github.com/kagawagao/pixas/commit/88825cd4c0dc5a6c8ff65ff867dbe7160a93eb17))
+- **deps:** bump @opas/core from 0.8.0 to 0.9.0 ([#75](https://github.com/kagawagao/pixas/issues/75)) ([f7e9b81](https://github.com/kagawagao/pixas/commit/f7e9b81f409398407ec414d99c53ce2582754207))
+- **deps:** bump @opas/plugin-app from 0.6.5 to 0.8.0 ([#64](https://github.com/kagawagao/pixas/issues/64)) ([d36e7b6](https://github.com/kagawagao/pixas/commit/d36e7b6d00c44f60a7080bdbbf8ab955fa541bb6))
+- **deps:** bump @opas/plugin-app from 0.8.0 to 0.9.0 ([#73](https://github.com/kagawagao/pixas/issues/73)) ([e4ece0e](https://github.com/kagawagao/pixas/commit/e4ece0e2c6a57b92fc395e18eec37aed4479d620))
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.12.0 to 7.13.0 ([#62](https://github.com/kagawagao/pixas/issues/62)) ([1bdac54](https://github.com/kagawagao/pixas/commit/1bdac54bb6c2509798bf9f4a13b48d84eca82456))
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.13.0 to 7.13.1 ([#70](https://github.com/kagawagao/pixas/issues/70)) ([1a2c003](https://github.com/kagawagao/pixas/commit/1a2c00383a7278976ad4cbe7235de0d7dcb1b433))
+- **deps:** bump @typescript-eslint/parser from 7.12.0 to 7.13.0 ([#63](https://github.com/kagawagao/pixas/issues/63)) ([9fa4789](https://github.com/kagawagao/pixas/commit/9fa47893f4120a5a01cd32ba6bb5abb3d56e82bd))
+- **deps:** bump @typescript-eslint/parser from 7.13.0 to 7.13.1 ([#71](https://github.com/kagawagao/pixas/issues/71)) ([8ca2df5](https://github.com/kagawagao/pixas/commit/8ca2df5f4be71165c7e68b94e8b80b345c10ee81))
+- **deps:** bump eslint-plugin-n from 17.8.1 to 17.9.0 ([#61](https://github.com/kagawagao/pixas/issues/61)) ([4172b44](https://github.com/kagawagao/pixas/commit/4172b4439e2a17e73d2f4a0fb9a8d89a0e3db651))
+- **deps:** bump eslint-plugin-react from 7.34.2 to 7.34.3 ([#69](https://github.com/kagawagao/pixas/issues/69)) ([3b95172](https://github.com/kagawagao/pixas/commit/3b9517238f7183f714eb812ef8a7959bc772b32e))
+- **deps:** bump prettier from 3.3.1 to 3.3.2 ([#66](https://github.com/kagawagao/pixas/issues/66)) ([2bd8d4a](https://github.com/kagawagao/pixas/commit/2bd8d4af23cea084fc8496fad4f2705802a4092b))
+- **deps:** bump stylelint-config-standard from 36.0.0 to 36.0.1 ([#68](https://github.com/kagawagao/pixas/issues/68)) ([68db2dc](https://github.com/kagawagao/pixas/commit/68db2dc5533db7fdd374f90360dcc5976702774e))
+- **deps:** bump typescript from 5.4.5 to 5.5.2 ([#74](https://github.com/kagawagao/pixas/issues/74)) ([dcae690](https://github.com/kagawagao/pixas/commit/dcae690d09ea02623081e2acbcab9cceb8ae2029))
+- **deps:** bump vite from 5.2.13 to 5.3.1 ([#67](https://github.com/kagawagao/pixas/issues/67)) ([022e473](https://github.com/kagawagao/pixas/commit/022e473d4941d7e6ef8bcbec64700e64f29d2d3e))
+- **deps:** bump vue from 3.4.27 to 3.4.29 ([#58](https://github.com/kagawagao/pixas/issues/58)) ([ac79bb5](https://github.com/kagawagao/pixas/commit/ac79bb5ac0010b75e35bb78234c5a103ebfa2294))
+- **deps:** bump vue from 3.4.29 to 3.4.30 ([#72](https://github.com/kagawagao/pixas/issues/72)) ([b0383bf](https://github.com/kagawagao/pixas/commit/b0383bf668a1aba38d68a22969a0a0556f5173c1))
+- **deps:** bump webpack from 5.91.0 to 5.92.0 ([#65](https://github.com/kagawagao/pixas/issues/65)) ([d374beb](https://github.com/kagawagao/pixas/commit/d374beb875a0307224f140bc75e90464a2270601))
+- **deps:** bump webpack from 5.92.0 to 5.92.1 ([#76](https://github.com/kagawagao/pixas/issues/76)) ([da3ee1f](https://github.com/kagawagao/pixas/commit/da3ee1fa838489c7f20b453c5a881541f1b0b897))
+
 ## [0.9.1](https://github.com/kagawagao/pixas/compare/v0.9.0...v0.9.1) (2024-06-16)
 
 ### Bug Fixes
