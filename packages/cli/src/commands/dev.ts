@@ -1,6 +1,6 @@
+import '@pixas/common/lib/env/dev';
 import { StartOptions } from '@pixas/bundler-base';
 import { app, env } from '@pixas/common';
-import '@pixas/common/lib/env/dev';
 import { program } from 'commander';
 import { choosePort } from 'react-dev-utils/WebpackDevServerUtils';
 import { checkBrowsers } from 'react-dev-utils/browsersHelper';

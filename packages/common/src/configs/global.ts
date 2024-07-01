@@ -103,8 +103,6 @@ export const getGlobalConfig = () => {
   };
 };
 
-const { compileGlobalVars, globalDefinitions, sharedGlobalDefinitions } = getGlobalConfig();
-
 const basicDefinitionContent =
   app.mode === 'spa'
     ? `
@@ -115,20 +113,20 @@ const basicDefinitionContent =
         readonly IS_SERVER: boolean;
         readonly IS_BROWSER: boolean;`;
 
-export const globalDefinitionsContent = `
+export const getGlobalDefinitionsContent = () => `
 declare namespace NodeJS {
   interface ProcessEnv {
     ${basicDefinitionContent}
-    ${globalDefinitions}
+    ${getGlobalConfig().globalDefinitions}
   }
 }
 `;
 
-export const sharedGlobalDefinitionsContent = `
+export const getSharedGlobalDefinitionsContent = () => `
 declare namespace NodeJS {
   interface ProcessEnv {
     ${basicDefinitionContent}
-    ${sharedGlobalDefinitions}
+    ${getGlobalConfig().sharedGlobalDefinitions}
   }
 }
 `;
@@ -162,19 +160,17 @@ const isUnderMono = isMonoRepo(monoRepoBaseDir);
 const isMonoRepoRoot = isMonoRepo(workDir);
 
 if (!isMonoRepoRoot) {
-  writeDefinitionFile(globalDefinitionFilePath, globalDefinitionsContent);
+  writeDefinitionFile(globalDefinitionFilePath, getGlobalDefinitionsContent());
 }
 
 if (isUnderMono) {
   const sharedDir = path.resolve(monoRepoBaseDir, 'packages/shared');
   if (fs.existsSync(sharedDir)) {
     const sharedGlobalDefinitionFilePath = path.resolve(monoRepoBaseDir, sharedDir, 'globals.d.ts');
-    writeDefinitionFile(sharedGlobalDefinitionFilePath, sharedGlobalDefinitionsContent);
+    writeDefinitionFile(sharedGlobalDefinitionFilePath, getSharedGlobalDefinitionsContent());
   }
 }
 
 if (!process.env.APP_NAME) {
   process.env.APP_NAME = app.name;
 }
-
-export default compileGlobalVars;

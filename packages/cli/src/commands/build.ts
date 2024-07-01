@@ -1,5 +1,5 @@
-import { app, env } from '@pixas/common';
 import '@pixas/common/lib/env/prod';
+import { app, env } from '@pixas/common';
 import { program } from 'commander';
 import signale from 'signale';
 import { AppBundler } from '../types';
