@@ -1,0 +1,34 @@
+{
+  "name": "@pixas/bundler-mako",
+  "version": "0.9.0",
+  "description": "mako bundler for pixas",
+  "author": "kagawa <kingsongao1221@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kagawagao/pixas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "preversion": "npm run build"
+  },
+  "dependencies": {
+    "@pixas/bundler-base": "^0.9.0",
+    "@pixas/common": "^0.9.0",
+    "@umijs/mako": "^0.7.3",
+    "jsdom": "^24.1.0"
+  }
+}

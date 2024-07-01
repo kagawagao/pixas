@@ -10,11 +10,12 @@ front end develop toolkit, which support multi bundler(ex: webpack/vite/...) and
 ## Features
 
 - 📦 **Multi Bundler Support**
-  - [x] webpack
-  - [x] vite
+  - [x] [`webpack`](https://webpack.js.org)
+  - [x] [`vite`](https://vitejs.dev)
+  - [ ] [`mako`](https://makojs.dev)
 - 🛠 **Multi Framework Support**
-  - [x] react
-  - [x] vue
+  - [x] [`react`](https://reactjs.org)
+  - [x] [`vue`](https://vuejs.org)
 - 🚀 **Open API Support**: support generate request client code with open api spec, both v2 and v3, see [DTS](#dts)
 - ⚙️ **Dynamic Configuration**: support dynamic configuration, see [Dynamic Configuration](#dynamic-runtime-configuration)
 
@@ -40,6 +41,13 @@ Currently Supported Bundlers:
 
   ```bash
   npm install -D @pixas/bundler-vite
+
+  ```
+
+- `mako`
+
+  ```bash
+  npm install -D @pixas/bundler-mako
   ```
 
 ### Usage

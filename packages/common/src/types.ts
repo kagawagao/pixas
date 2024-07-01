@@ -11,7 +11,7 @@ export type AppFramework = 'react' | 'vue' | 'vue2' | 'unknown';
 /**
  * app bundler
  */
-export type AppBundler = 'webpack' | 'vite';
+export type AppBundler = 'webpack' | 'vite' | 'mako';
 
 /**
  * global var format
