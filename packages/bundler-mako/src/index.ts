@@ -66,7 +66,7 @@ export default class MakoBundler extends Bundler {
 
   public start = async (opts: StartOptions) => {
     if (this.app.mode !== 'spa') {
-      signale.error('Vite only supports SPA mode at now.');
+      signale.error('Mako only supports SPA mode at now.');
       return;
     }
     signale.start('Starting the development server...\n');
@@ -85,7 +85,7 @@ export default class MakoBundler extends Bundler {
 
   public build = async () => {
     if (this.app.mode !== 'spa') {
-      signale.error('Vite only supports SPA mode at now.');
+      signale.error('Mako only supports SPA mode at now.');
       return;
     }
     this.run(false);

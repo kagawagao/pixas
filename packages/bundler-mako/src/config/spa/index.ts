@@ -21,6 +21,7 @@ const config: MakoConfig = {
     mode: 'bundle',
     preserveModules: false,
   },
+  moduleIdStrategy: process.env.NODE_ENV === 'production' ? 'hashed' : 'named',
 };
 
 export default config;
