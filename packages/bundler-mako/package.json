@@ -28,6 +28,7 @@
   "dependencies": {
     "@pixas/bundler-base": "^0.9.0",
     "@pixas/common": "^0.9.0",
-    "@umijs/mako": "^0.7.3"
+    "@umijs/mako": "^0.7.3",
+    "jsdom": "^24.1.0"
   }
 }
