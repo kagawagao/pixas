@@ -35,7 +35,7 @@ export function getCSSLoader(lang: 'css' | 'less' | 'sass' | 'scss', isServer = 
           esModule: true,
           modules: {
             localIdentName: DEV ? '[path][name]__[local]' : '[hash:base64]',
-            exportLocalsConvention: 'camelCaseOnly',
+            exportLocalsConvention: 'camelCase',
             auto: true,
             namedExport: false,
             // exportOnlyLocals: isServer,
