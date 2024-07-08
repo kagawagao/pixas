@@ -35,7 +35,7 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@opas/core": "^0.9.0",
-    "@opas/plugin-app": "^0.9.0",
+    "@opas/plugin-app": "^0.10.0",
     "@pixas/babel-preset-app": "^0.11.0",
     "@pixas/bundler-base": "^0.11.0",
     "@pixas/common": "^0.11.0",
