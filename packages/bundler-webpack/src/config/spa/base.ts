@@ -9,9 +9,7 @@ import WebpackBar from 'webpackbar';
 import { global, paths } from '@pixas/common';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { GenerateSW } from 'workbox-webpack-plugin';
-import { argv } from 'yargs';
 import { getCSSLoader } from '../utils';
 
 const { entryPath, outputDir, publicDir, srcDir } = paths;
@@ -174,15 +172,6 @@ if (PRODUCT) {
             },
           },
         ],
-      }),
-    );
-  }
-
-  if ((argv as any).ana) {
-    // bundle analyzer
-    config.plugins!.push(
-      new BundleAnalyzerPlugin({
-        // generateStatsFile: true
       }),
     );
   }
