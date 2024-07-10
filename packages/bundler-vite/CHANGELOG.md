@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
+
+### Chores
+
+- update deps ([f4b1874](https://github.com/kagawagao/pixas/commit/f4b1874adee803a1ab573081cb19e5a9ddf66638))
+
 ## [0.11.0](https://github.com/kagawagao/pixas/compare/v0.10.1...v0.11.0) (2024-07-01)
 
 **Note:** Version bump only for package @pixas/bundler-vite

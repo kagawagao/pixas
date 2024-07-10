@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
+
+### Features
+
+- **bundler-webpack:** remove webpack-bundle-analyzer ([ea84446](https://github.com/kagawagao/pixas/commit/ea84446cc0cab5a07feb0518a79c7ce1efd4c0ff))
+
+### Chores
+
+- **deps-dev:** bump @types/lodash from 4.17.5 to 4.17.6 ([#84](https://github.com/kagawagao/pixas/issues/84)) ([f73fd57](https://github.com/kagawagao/pixas/commit/f73fd57833bc21fca42aa8b8748abaed381a2dcf))
+- **deps-dev:** bump lerna from 8.1.3 to 8.1.5 ([#86](https://github.com/kagawagao/pixas/issues/86)) ([3c80f89](https://github.com/kagawagao/pixas/commit/3c80f89b1a387e55619e7377b1ef0be8b244b32f))
+- **deps:** bump @opas/plugin-app from 0.9.0 to 0.10.0 ([#93](https://github.com/kagawagao/pixas/issues/93)) ([27c112c](https://github.com/kagawagao/pixas/commit/27c112c7634acfec6fd3062ed8058bdf3b5204f1))
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.13.1 to 7.14.1 ([#79](https://github.com/kagawagao/pixas/issues/79)) ([dddf22e](https://github.com/kagawagao/pixas/commit/dddf22e5461211e72f0d068e431cd237bdbcd811))
+- **deps:** bump @typescript-eslint/parser from 7.13.1 to 7.14.1 ([#82](https://github.com/kagawagao/pixas/issues/82)) ([91a1ce4](https://github.com/kagawagao/pixas/commit/91a1ce4320cd6568dadb93dbcf40856390372cb0))
+- **deps:** bump @typescript-eslint/parser from 7.14.1 to 7.15.0 ([#91](https://github.com/kagawagao/pixas/issues/91)) ([206e85b](https://github.com/kagawagao/pixas/commit/206e85b5465842a32473c019022af324e26f474b))
+- **deps:** bump @umijs/mako from 0.7.3 to 0.7.4 ([#89](https://github.com/kagawagao/pixas/issues/89)) ([2acf5a1](https://github.com/kagawagao/pixas/commit/2acf5a150967b7327a92bfcd3e2130825b142b46))
+- **deps:** bump eslint-plugin-promise from 6.2.0 to 6.4.0 ([#81](https://github.com/kagawagao/pixas/issues/81)) ([313d559](https://github.com/kagawagao/pixas/commit/313d55931e2520b1e30ebf21e69df85ab5996add))
+- **deps:** bump eslint-plugin-vue from 9.26.0 to 9.27.0 ([#92](https://github.com/kagawagao/pixas/issues/92)) ([0cca7da](https://github.com/kagawagao/pixas/commit/0cca7da8f36a8b805ece731fe604e567dfec65f7))
+- **deps:** bump postcss from 8.4.38 to 8.4.39 ([#85](https://github.com/kagawagao/pixas/issues/85)) ([a7f8ff6](https://github.com/kagawagao/pixas/commit/a7f8ff69ad0b26d7a5d317a5afae50c9a68464b8))
+- **deps:** bump postcss-preset-env from 9.5.14 to 9.5.15 ([#80](https://github.com/kagawagao/pixas/issues/80)) ([1610b8a](https://github.com/kagawagao/pixas/commit/1610b8abc74daddbdbc92a6f66a01d54a0206c39))
+- **deps:** bump postcss-preset-env from 9.5.15 to 9.6.0 ([#87](https://github.com/kagawagao/pixas/issues/87)) ([fbede1f](https://github.com/kagawagao/pixas/commit/fbede1f3f618880cecd79a4e2a0a695ab3af219b))
+- **deps:** bump vite from 5.3.1 to 5.3.2 ([#83](https://github.com/kagawagao/pixas/issues/83)) ([e7afd53](https://github.com/kagawagao/pixas/commit/e7afd53460fdfc3a87c36a6f7c6cab678978cb49))
+- **deps:** bump vite from 5.3.2 to 5.3.3 ([#90](https://github.com/kagawagao/pixas/issues/90)) ([0d4f40d](https://github.com/kagawagao/pixas/commit/0d4f40da3178f5f580cacbec0a70c005bf7ef481))
+- **deps:** bump vue from 3.4.30 to 3.4.31 ([#78](https://github.com/kagawagao/pixas/issues/78)) ([08d6486](https://github.com/kagawagao/pixas/commit/08d6486f85fad7454427fbf368256835ee56a928))
+- **deps:** bump webpack-merge from 5.10.0 to 6.0.1 ([#88](https://github.com/kagawagao/pixas/issues/88)) ([7882e4d](https://github.com/kagawagao/pixas/commit/7882e4d011207656f8411e267fc42d13f76884ec))
+- **deps:** bump ws from 8.17.0 to 8.18.0 ([#98](https://github.com/kagawagao/pixas/issues/98)) ([34c9df6](https://github.com/kagawagao/pixas/commit/34c9df684cb7136f16b95cb44df2530cfc65a886))
+- update deps ([f4b1874](https://github.com/kagawagao/pixas/commit/f4b1874adee803a1ab573081cb19e5a9ddf66638))
+
 ## [0.11.0](https://github.com/kagawagao/pixas/compare/v0.10.1...v0.11.0) (2024-07-01)
 
 ### Features

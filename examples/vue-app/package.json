@@ -1,6 +1,6 @@
 {
   "name": "@pixas/vue-app",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "pixas vue app demo",
   "private": true,
   "scripts": {
@@ -11,8 +11,8 @@
     "vue": "^3.4.27"
   },
   "devDependencies": {
-    "@pixas/bundler-vite": "^0.11.0",
-    "@pixas/cli": "^0.11.0",
+    "@pixas/bundler-vite": "^0.12.0",
+    "@pixas/cli": "^0.12.0",
     "@vue/babel-preset-app": "^5.0.8",
     "@vue/tsconfig": "^0.5.1"
   },

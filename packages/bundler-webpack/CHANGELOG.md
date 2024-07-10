@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
+
+### Features
+
+- **bundler-webpack:** remove webpack-bundle-analyzer ([ea84446](https://github.com/kagawagao/pixas/commit/ea84446cc0cab5a07feb0518a79c7ce1efd4c0ff))
+
+### Chores
+
+- **deps:** bump webpack-merge from 5.10.0 to 6.0.1 ([#88](https://github.com/kagawagao/pixas/issues/88)) ([7882e4d](https://github.com/kagawagao/pixas/commit/7882e4d011207656f8411e267fc42d13f76884ec))
+
 ## [0.11.0](https://github.com/kagawagao/pixas/compare/v0.10.1...v0.11.0) (2024-07-01)
 
 **Note:** Version bump only for package @pixas/bundler-webpack

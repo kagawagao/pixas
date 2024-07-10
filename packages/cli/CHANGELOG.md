@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
+
+### Chores
+
+- **deps:** bump @opas/plugin-app from 0.9.0 to 0.10.0 ([#93](https://github.com/kagawagao/pixas/issues/93)) ([27c112c](https://github.com/kagawagao/pixas/commit/27c112c7634acfec6fd3062ed8058bdf3b5204f1))
+- update deps ([f4b1874](https://github.com/kagawagao/pixas/commit/f4b1874adee803a1ab573081cb19e5a9ddf66638))
+
 ## [0.11.0](https://github.com/kagawagao/pixas/compare/v0.10.1...v0.11.0) (2024-07-01)
 
 ### Bug Fixes
