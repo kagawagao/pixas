@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/kagawagao/pixas/compare/v0.12.0...v0.12.1) (2024-07-16)
+
+### Chores
+
+- **deps:** bump @opas/core from 0.10.0 to 0.12.0 ([#109](https://github.com/kagawagao/pixas/issues/109)) ([0f9ec89](https://github.com/kagawagao/pixas/commit/0f9ec890f464678cbba7a0d179e23cc66816d853))
+- **deps:** bump @opas/plugin-app from 0.10.0 to 0.12.0 ([#108](https://github.com/kagawagao/pixas/issues/108)) ([d894c6d](https://github.com/kagawagao/pixas/commit/d894c6d12ca764ce2037ce2566fd357bbf44fc1e))
+
 ## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
 
 ### Chores

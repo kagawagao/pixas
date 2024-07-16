@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/kagawagao/pixas/compare/v0.12.0...v0.12.1) (2024-07-16)
+
+### Chores
+
+- **deps-dev:** bump @babel/cli from 7.24.7 to 7.24.8 ([#112](https://github.com/kagawagao/pixas/issues/112)) ([4de1dcf](https://github.com/kagawagao/pixas/commit/4de1dcf7d2a46b867d0ee65dcc59ae797a9d781b))
+- **deps:** bump @babel/core from 7.24.7 to 7.24.8 ([#113](https://github.com/kagawagao/pixas/issues/113)) ([08f309e](https://github.com/kagawagao/pixas/commit/08f309e062fb5c76a7a8af39d101f5453169da82))
+- **deps:** bump @babel/eslint-parser from 7.24.7 to 7.24.8 ([#110](https://github.com/kagawagao/pixas/issues/110)) ([b75f2ef](https://github.com/kagawagao/pixas/commit/b75f2ef54a4b24cdfda01d0c5524fb8ebc3f2d13))
+- **deps:** bump @babel/helper-plugin-utils from 7.24.7 to 7.24.8 ([#100](https://github.com/kagawagao/pixas/issues/100)) ([49554f2](https://github.com/kagawagao/pixas/commit/49554f2f9fce3c47fed9e9a66893d8e59181a34b))
+- **deps:** bump @babel/plugin-transform-typescript ([#102](https://github.com/kagawagao/pixas/issues/102)) ([df9b517](https://github.com/kagawagao/pixas/commit/df9b517acb692b0224f27e9124077ab7e2ee4360))
+- **deps:** bump @babel/preset-env from 7.24.7 to 7.24.8 ([#106](https://github.com/kagawagao/pixas/issues/106)) ([0a22f63](https://github.com/kagawagao/pixas/commit/0a22f6334cca028cf5a2fe25eec4cda6666ccbfc))
+- **deps:** bump @babel/runtime from 7.24.7 to 7.24.8 ([#99](https://github.com/kagawagao/pixas/issues/99)) ([d03c9c7](https://github.com/kagawagao/pixas/commit/d03c9c7685cda73ca7e597d80797add452135fd6))
+- **deps:** bump @babel/types from 7.24.7 to 7.24.8 ([#105](https://github.com/kagawagao/pixas/issues/105)) ([6aa1e25](https://github.com/kagawagao/pixas/commit/6aa1e2591e24d9957ac9d55afdc0355bdeaf3c72))
+- **deps:** bump @opas/core from 0.10.0 to 0.12.0 ([#109](https://github.com/kagawagao/pixas/issues/109)) ([0f9ec89](https://github.com/kagawagao/pixas/commit/0f9ec890f464678cbba7a0d179e23cc66816d853))
+- **deps:** bump @opas/plugin-app from 0.10.0 to 0.12.0 ([#108](https://github.com/kagawagao/pixas/issues/108)) ([d894c6d](https://github.com/kagawagao/pixas/commit/d894c6d12ca764ce2037ce2566fd357bbf44fc1e))
+- **deps:** bump @umijs/mako from 0.7.4 to 0.7.5 ([#103](https://github.com/kagawagao/pixas/issues/103)) ([4c4d0c3](https://github.com/kagawagao/pixas/commit/4c4d0c32da69713144dcf3e0e995cb237d5182d3))
+- **deps:** bump eslint-plugin-react from 7.34.3 to 7.34.4 ([#101](https://github.com/kagawagao/pixas/issues/101)) ([e79502d](https://github.com/kagawagao/pixas/commit/e79502d4d959603925f5621d2b978388789ab980))
+- **deps:** bump prettier from 3.3.2 to 3.3.3 ([#107](https://github.com/kagawagao/pixas/issues/107)) ([3b8dadc](https://github.com/kagawagao/pixas/commit/3b8dadc89f89b728692ac0a83a2d3201f935cae3))
+- **deps:** bump stylelint from 16.6.1 to 16.7.0 ([#114](https://github.com/kagawagao/pixas/issues/114)) ([ee1f925](https://github.com/kagawagao/pixas/commit/ee1f925ec38b6d85750db638e85f564309c757be))
+- **deps:** bump stylelint-prettier from 5.0.0 to 5.0.1 ([#111](https://github.com/kagawagao/pixas/issues/111)) ([ade9f46](https://github.com/kagawagao/pixas/commit/ade9f467180515fe59e2d57861e011c4f86a7971))
+- **deps:** bump webpack from 5.92.1 to 5.93.0 ([#104](https://github.com/kagawagao/pixas/issues/104)) ([e5dabb4](https://github.com/kagawagao/pixas/commit/e5dabb450ecb71c0e40c80189f70ce7c8db58187))
+- remove extra files ([1154aef](https://github.com/kagawagao/pixas/commit/1154aefe2e97a0600092b121ca09f695597a6bb4))
+
 ## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
 
 ### Features
