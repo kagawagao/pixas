@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/kagawagao/pixas/compare/v0.12.1...v0.12.2) (2024-07-17)
+
+### Bug Fixes
+
+- fix env load ([aba636d](https://github.com/kagawagao/pixas/commit/aba636da525803cb9f138d7d3a8861b11b75b5c3))
+
 ## [0.12.1](https://github.com/kagawagao/pixas/compare/v0.12.0...v0.12.1) (2024-07-16)
 
 ### Chores

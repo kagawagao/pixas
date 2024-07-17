@@ -1,6 +1,6 @@
 {
   "name": "@pixas/bundler-base",
-  "version": "0.12.0",
+  "version": "0.12.2",
   "description": "base bundler for pixas",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -26,6 +26,6 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@pixas/common": "^0.12.0"
+    "@pixas/common": "^0.12.2"
   }
 }
