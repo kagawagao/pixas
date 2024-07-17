@@ -155,19 +155,21 @@ export const getRuntimeGlobalVarsContent = async () => {
   });
 };
 
-const monoRepoBaseDir = path.resolve(workDir, '../../');
-const isUnderMono = isMonoRepo(monoRepoBaseDir);
-const isMonoRepoRoot = isMonoRepo(workDir);
+export function writeGlobalDefinitions() {
+  const monoRepoBaseDir = path.resolve(workDir, '../../');
+  const isUnderMono = isMonoRepo(monoRepoBaseDir);
+  const isMonoRepoRoot = isMonoRepo(workDir);
 
-if (!isMonoRepoRoot) {
-  writeDefinitionFile(globalDefinitionFilePath, getGlobalDefinitionsContent());
-}
+  if (!isMonoRepoRoot) {
+    writeDefinitionFile(globalDefinitionFilePath, getGlobalDefinitionsContent());
+  }
 
-if (isUnderMono) {
-  const sharedDir = path.resolve(monoRepoBaseDir, 'packages/shared');
-  if (fs.existsSync(sharedDir)) {
-    const sharedGlobalDefinitionFilePath = path.resolve(monoRepoBaseDir, sharedDir, 'globals.d.ts');
-    writeDefinitionFile(sharedGlobalDefinitionFilePath, getSharedGlobalDefinitionsContent());
+  if (isUnderMono) {
+    const sharedDir = path.resolve(monoRepoBaseDir, 'packages/shared');
+    if (fs.existsSync(sharedDir)) {
+      const sharedGlobalDefinitionFilePath = path.resolve(monoRepoBaseDir, sharedDir, 'globals.d.ts');
+      writeDefinitionFile(sharedGlobalDefinitionFilePath, getSharedGlobalDefinitionsContent());
+    }
   }
 }
 

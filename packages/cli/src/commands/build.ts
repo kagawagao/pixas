@@ -1,5 +1,6 @@
 import '@pixas/common/lib/env/prod';
 import { app, env } from '@pixas/common';
+import { writeGlobalDefinitions } from '@pixas/common/lib/configs/global';
 import { program } from 'commander';
 import signale from 'signale';
 import { AppBundler } from '../types';
@@ -23,8 +24,9 @@ program
 
       if (mode) {
         process.env.BIZ_ENV = mode;
-        env.loadEnv();
       }
+      env.loadEnv();
+      writeGlobalDefinitions();
 
       const Bundler = await getBundlerByType(bundleType);
 
