@@ -1,6 +1,6 @@
 {
   "name": "@pixas/cli",
-  "version": "0.12.2",
+  "version": "0.12.3",
   "description": "front end develop toolkit",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -37,9 +37,9 @@
     "@opas/core": "^0.12.0",
     "@opas/plugin-app": "^0.12.0",
     "@pixas/babel-preset-app": "^0.12.0",
-    "@pixas/bundler-base": "^0.12.2",
-    "@pixas/common": "^0.12.2",
-    "@pixas/eslint-config": "^0.12.0",
+    "@pixas/bundler-base": "^0.12.3",
+    "@pixas/common": "^0.12.3",
+    "@pixas/eslint-config": "^0.12.3",
     "@pixas/prettier-config": "^0.12.0",
     "@pixas/stylelint-config": "^0.12.0",
     "chalk": "^4.1.2",
@@ -62,9 +62,9 @@
   },
   "devDependencies": {
     "@pixas/babel-preset-lib": "^0.12.0",
-    "@pixas/bundler-mako": "^0.12.2",
-    "@pixas/bundler-vite": "^0.12.2",
-    "@pixas/bundler-webpack": "^0.12.2",
+    "@pixas/bundler-mako": "^0.12.3",
+    "@pixas/bundler-vite": "^0.12.3",
+    "@pixas/bundler-webpack": "^0.12.3",
     "@types/less": "^3.0.3",
     "@types/react-dev-utils": "^9.0.11",
     "@types/webpack-node-externals": "^3.0.0"

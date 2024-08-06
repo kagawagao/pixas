@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.3](https://github.com/kagawagao/pixas/compare/v0.12.2...v0.12.3) (2024-08-06)
+
+### Chores
+
+- **deps:** bump @typescript-eslint/eslint-plugin from 7.17.0 to 8.0.0 ([#146](https://github.com/kagawagao/pixas/issues/146)) ([9623861](https://github.com/kagawagao/pixas/commit/9623861711f95de238004706040462bf748b1b53))
+- **deps:** bump @typescript-eslint/parser from 7.18.0 to 8.0.0 ([#156](https://github.com/kagawagao/pixas/issues/156)) ([96708c6](https://github.com/kagawagao/pixas/commit/96708c6651a397fdc1c71a95d2f5b1b3234e7071))
+
 ## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
 
 ### Chores

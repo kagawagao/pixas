@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.3](https://github.com/kagawagao/pixas/compare/v0.12.2...v0.12.3) (2024-08-06)
+
+### Chores
+
+- **deps:** bump postcss-preset-env from 9.6.0 to 10.0.0 ([#151](https://github.com/kagawagao/pixas/issues/151)) ([5432b1c](https://github.com/kagawagao/pixas/commit/5432b1c666232a867445e525cc4b6d97d1df6a11))
+
 ## [0.12.2](https://github.com/kagawagao/pixas/compare/v0.12.1...v0.12.2) (2024-07-17)
 
 **Note:** Version bump only for package @pixas/bundler-webpack
