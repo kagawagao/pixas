@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://github.com/kagawagao/pixas/compare/v0.12.4...v0.12.5) (2024-08-06)
+
+### Bug Fixes
+
+- **eslint-config:** fix deps ([7eb8b46](https://github.com/kagawagao/pixas/commit/7eb8b46926c95cde2720eeddfe3d85f2c826bb9a))
+
 ## [0.12.4](https://github.com/kagawagao/pixas/compare/v0.12.3...v0.12.4) (2024-08-06)
 
 ### Bug Fixes
