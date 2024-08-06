@@ -21,11 +21,11 @@ module.exports = {
       presets: ['@pixas/babel-preset-app'],
     },
   },
-  plugins: ['prettier'],
+  plugins: ['prettier', '@stylistic'],
   rules: {
     'prettier/prettier': 'error',
     'standard/no-callback-literal': 'off',
-    quotes: [
+    '@stylistic/quotes': [
       'error',
       'single',
       {

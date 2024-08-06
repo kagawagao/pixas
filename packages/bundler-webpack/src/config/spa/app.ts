@@ -12,7 +12,7 @@ export const appConfig = (() => {
     }
   }
   if (webpackPath) {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const appConfig = require(webpackPath);
     return appConfig.default || appConfig;
   } else {

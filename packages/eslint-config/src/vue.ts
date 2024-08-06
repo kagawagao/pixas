@@ -25,7 +25,7 @@ module.exports = {
     },
   },
   extends: ['standard', 'prettier', 'plugin:prettier/recommended', 'plugin:vue/vue3-essential'],
-  plugins: ['prettier'],
+  plugins: ['prettier', '@stylistic'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -36,7 +36,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:vue/vue3-essential',
       ],
-      plugins: ['prettier', '@typescript-eslint'],
+      plugins: ['prettier', '@typescript-eslint', '@stylistic'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         sourceType: 'module',
@@ -140,6 +140,7 @@ module.exports = {
           {
             // args: 'none',
             // ignoreRestSiblings: true,
+            caughtErrors: 'none',
           },
         ],
         'no-useless-constructor': 'off',
@@ -151,7 +152,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         quotes: 'off',
-        '@typescript-eslint/quotes': [
+        '@stylistic/quotes': [
           'error',
           'single',
           {
@@ -166,7 +167,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'standard/no-callback-literal': 'off',
     'vue/multi-word-component-names': 'off',
-    quotes: [
+    '@stylistic/quotes': [
       'error',
       'single',
       {

@@ -1,17 +1,17 @@
-import { merge } from 'webpack-merge';
-import baseConfig from './base';
-import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
-import { appConfig } from './app';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import vue2ConfigFunc from './vue2';
-import vueConfigFunc from './vue';
-import InjectEnvPlugin from '../../plugins/inject-env-plugin';
+import { app as appScope, framework, paths } from '@pixas/common';
 import chalk from 'chalk';
-import path from 'node:path';
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 import fs from 'node:fs';
+import path from 'node:path';
 import signale from 'signale';
 import { Configuration } from 'webpack';
-import { paths, framework, app as appScope } from '@pixas/common';
+import { merge } from 'webpack-merge';
+import InjectEnvPlugin from '../../plugins/inject-env-plugin';
+import { appConfig } from './app';
+import baseConfig from './base';
+import vueConfigFunc from './vue';
+import vue2ConfigFunc from './vue2';
 
 const { config: app } = appScope;
 
@@ -82,6 +82,7 @@ if (app.logo) {
   const logo = path.resolve(workDir, app.logo);
   if (fs.existsSync(logo)) {
     try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       require('favicons');
       config.plugins!.push(
         new FaviconsWebpackPlugin({

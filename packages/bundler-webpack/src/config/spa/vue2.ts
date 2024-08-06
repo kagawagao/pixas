@@ -1,5 +1,5 @@
-import { Configuration } from 'webpack';
 import { paths } from '@pixas/common';
+import { Configuration } from 'webpack';
 
 export default function (config: Configuration) {
   config.resolve!.extensions!.unshift('.mjs');
@@ -15,7 +15,7 @@ export default function (config: Configuration) {
     ],
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const { VueLoaderPlugin } = require(require.resolve('vue-loader'));
 
   config.plugins!.push(new VueLoaderPlugin());

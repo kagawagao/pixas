@@ -28,6 +28,7 @@ export const readJSONFileSync = (file: string): Record<string, any> => {
   if (!file) {
     throw new Error('Invalid File Path');
   }
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   return require(file);
   // const fileContent = fs.readFileSync(file, 'utf8')
   // return JSON.parse(fileContent)

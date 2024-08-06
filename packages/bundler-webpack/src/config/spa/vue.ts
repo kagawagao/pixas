@@ -23,7 +23,7 @@ export default function (config: Configuration) {
     ],
   });
 
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const { VueLoaderPlugin } = require(require.resolve('vue-loader'));
 
   config.plugins!.push(new VueLoaderPlugin());

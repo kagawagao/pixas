@@ -22,7 +22,7 @@ const stylelintConfig: Config = {
     },
     {
       files: ['**/*.vue', '**/*.html', '**/*.ejs'],
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       customSyntax: require('postcss-html')({
         less: 'postcss-less',
         scss: 'postcss-scss',
@@ -30,7 +30,7 @@ const stylelintConfig: Config = {
     },
     {
       files: ['**/*.md'],
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
       customSyntax: require('postcss-markdown')({
         less: 'postcss-less',
         scss: 'postcss-scss',

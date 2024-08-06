@@ -9,7 +9,7 @@
     "examples/*"
   ],
   "scripts": {
-    "prelint": "npm run build",
+    "prelint": "npx lerna run build --scope=@pixas/eslint-config --scope=@pixas/prettier-config --scope=@pixas/stylelint-config",
     "lint": "eslint . --ext=.js,.ts  --fix",
     "build": "lerna run build",
     "release": "lerna publish --conventional-commits",

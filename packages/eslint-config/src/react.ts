@@ -31,11 +31,11 @@ module.exports = {
       presets: ['@pixas/babel-preset-app'],
     },
   },
-  plugins: ['react', 'react-hooks', 'prettier'],
+  plugins: ['react', 'react-hooks', 'prettier', '@stylistic'],
   rules: {
     'prettier/prettier': 'error',
     'standard/no-callback-literal': 'off',
-    quotes: [
+    '@stylistic/quotes': [
       'error',
       'single',
       {
@@ -68,7 +68,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:@typescript-eslint/recommended',
       ],
-      plugins: ['react', 'react-hooks', 'prettier', '@typescript-eslint'],
+      plugins: ['react', 'react-hooks', 'prettier', '@typescript-eslint', '@stylistic'],
       rules: {
         // TypeScript's `noFallthroughCasesInSwitch` option is more robust (#6906)
         'default-case': 'off',
@@ -98,6 +98,7 @@ module.exports = {
           {
             // args: 'none',
             // ignoreRestSiblings: true,
+            caughtErrors: 'none',
           },
         ],
         'no-useless-constructor': 'off',
@@ -111,7 +112,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         quotes: 'off',
-        '@typescript-eslint/quotes': [
+        '@stylistic/quotes': [
           'error',
           'single',
           {
