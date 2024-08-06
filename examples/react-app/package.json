@@ -1,7 +1,7 @@
 {
   "name": "@pixas/react-app",
   "description": "pixas react app demo",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "private": true,
   "scripts": {
     "dev": "pixas dev",
@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "@pixas/babel-preset-app": "^0.12.0",
-    "@pixas/bundler-webpack": "^0.12.3",
-    "@pixas/cli": "^0.12.3",
+    "@pixas/bundler-webpack": "^0.12.4",
+    "@pixas/cli": "^0.12.4",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0"
   },

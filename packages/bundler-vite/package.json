@@ -1,6 +1,6 @@
 {
   "name": "@pixas/bundler-vite",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "description": "vite bundler for pixas",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -26,8 +26,8 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@pixas/bundler-base": "^0.12.3",
-    "@pixas/common": "^0.12.3",
+    "@pixas/bundler-base": "^0.12.4",
+    "@pixas/common": "^0.12.4",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "ejs": "^3.1.6",
