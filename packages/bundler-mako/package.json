@@ -29,6 +29,6 @@
     "@pixas/bundler-base": "^0.12.4",
     "@pixas/common": "^0.12.4",
     "@umijs/mako": "^0.8.0",
-    "jsdom": "^24.1.0"
+    "jsdom": "^25.0.0"
   }
 }
