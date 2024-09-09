@@ -11,7 +11,6 @@ import InjectEnvPlugin from '../../plugins/inject-env-plugin';
 import { appConfig } from './app';
 import baseConfig from './base';
 import vueConfigFunc from './vue';
-import vue2ConfigFunc from './vue2';
 
 const { config: app } = appScope;
 
@@ -22,11 +21,8 @@ const { tplPath, workDir } = paths;
 const frameworkConfig = framework.isVue
   ? // eslint-disable-next-line @typescript-eslint/no-var-requires
     vueConfigFunc(baseConfig)
-  : framework.isVue2
-    ? // eslint-disable-next-line @typescript-eslint/no-var-requires
-      vue2ConfigFunc(baseConfig)
-    : // eslint-disable-next-line @typescript-eslint/no-var-requires
-      baseConfig;
+  : // eslint-disable-next-line @typescript-eslint/no-var-requires
+    baseConfig;
 
 const config: Configuration =
   typeof appConfig === 'function' ? appConfig(frameworkConfig, false) : merge(frameworkConfig, appConfig);

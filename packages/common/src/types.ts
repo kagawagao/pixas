@@ -6,7 +6,7 @@ export type AppType = 'spa' | 'ssr' | 'ssg';
 /**
  * app framework
  */
-export type AppFramework = 'react' | 'vue' | 'vue2' | 'unknown';
+export type AppFramework = 'react' | 'vue' | 'unknown';
 
 /**
  * app bundler
