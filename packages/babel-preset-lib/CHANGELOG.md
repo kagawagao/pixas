@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.0](https://github.com/kagawagao/pixas/compare/v0.12.5...v0.13.0) (2024-09-09)
+
+**Note:** Version bump only for package @pixas/babel-preset-lib
+
 ## [0.12.0](https://github.com/kagawagao/pixas/compare/v0.11.0...v0.12.0) (2024-07-10)
 
 ### Chores

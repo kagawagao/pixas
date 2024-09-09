@@ -1,6 +1,6 @@
 {
   "name": "@pixas/bundler-webpack",
-  "version": "0.12.4",
+  "version": "0.13.0",
   "description": "webpack bundler for pixas",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -28,8 +28,8 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@opd/css-modules-typings-loader": "^1.4.1",
-    "@pixas/bundler-base": "^0.12.4",
-    "@pixas/common": "^0.12.4",
+    "@pixas/bundler-base": "^0.13.0",
+    "@pixas/common": "^0.13.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
     "babel-loader": "^9.1.0",
     "chalk": "^4.1.2",

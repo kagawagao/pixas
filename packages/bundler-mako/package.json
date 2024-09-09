@@ -1,6 +1,6 @@
 {
   "name": "@pixas/bundler-mako",
-  "version": "0.12.4",
+  "version": "0.13.0",
   "description": "mako bundler for pixas",
   "author": "kagawa <kingsongao1221@gmail.com>",
   "homepage": "",
@@ -26,8 +26,8 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@pixas/bundler-base": "^0.12.4",
-    "@pixas/common": "^0.12.4",
+    "@pixas/bundler-base": "^0.13.0",
+    "@pixas/common": "^0.13.0",
     "@umijs/mako": "^0.8.0",
     "jsdom": "^25.0.0"
   }
