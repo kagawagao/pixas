@@ -51,7 +51,7 @@
     "postcss-preset-env": "^10.0.0",
     "prettier": "^3.0.0",
     "react-dev-utils": "^12.1.0-next.14",
-    "react-refresh": "^0.14.0",
+    "react-refresh": "^0.16.0",
     "signale": "^1.4.0",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.1.1",
