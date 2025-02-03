@@ -26,7 +26,7 @@
     "@pixas/stylelint-config": "file:./packages/stylelint-config",
     "@types/babel__helper-plugin-utils": "^7.10.3",
     "@types/ejs": "^3.1.5",
-    "@types/eslint": "^8.56.10",
+    "@types/eslint": "^9.6.1",
     "@types/fs-extra": "^11.0.4",
     "@types/jest": "^29.5.12",
     "@types/jsdom": "^21.1.7",
