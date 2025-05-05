@@ -30,7 +30,7 @@
     "@opd/css-modules-typings-loader": "^1.4.1",
     "@pixas/bundler-base": "^0.13.0",
     "@pixas/common": "^0.13.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.0",
     "babel-loader": "^10.0.0",
     "chalk": "^4.1.2",
     "copy-webpack-plugin": "^13.0.0",
