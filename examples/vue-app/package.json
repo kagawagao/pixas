@@ -14,7 +14,7 @@
     "@pixas/bundler-vite": "^0.13.0",
     "@pixas/cli": "^0.13.0",
     "@vue/babel-preset-app": "^5.0.8",
-    "@vue/tsconfig": "^0.7.0"
+    "@vue/tsconfig": "^0.8.1"
   },
   "browserslist": {
     "production": [
