@@ -29,7 +29,7 @@
     "@types/eslint": "^9.6.1",
     "@types/fs-extra": "^11.0.4",
     "@types/jest": "^30.0.0",
-    "@types/jsdom": "^21.1.7",
+    "@types/jsdom": "^27.0.0",
     "@types/lodash": "^4.17.4",
     "@types/signale": "^1.4.7",
     "cross-env": "^10.0.0",
