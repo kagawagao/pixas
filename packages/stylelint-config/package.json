@@ -33,7 +33,7 @@
     "postcss-markdown": "^1.1.0",
     "postcss-scss": "^4.0.4",
     "stylelint": "^16.0.2",
-    "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-standard": "^40.0.0",
     "stylelint-prettier": "^5.0.0"
   },
   "devDependencies": {
