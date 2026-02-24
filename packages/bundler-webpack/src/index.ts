@@ -79,10 +79,10 @@ export default class WebpackBundler extends Bundler {
           messages = formatWebpackMessages({
             errors: [errMessage],
             warnings: [],
-          });
+          } as any);
         }
       } else {
-        messages = formatWebpackMessages(stats.toJson({ all: false, warnings: true, errors: true }));
+        messages = formatWebpackMessages(stats.toJson({ all: false, warnings: true, errors: true }) as any);
       }
 
       if (messages.errors.length) {
