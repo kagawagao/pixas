@@ -6,7 +6,7 @@ import { paths, framework, global, postcss } from '@pixas/common';
 
 const { entryPath, outputDir, publicDir, srcDir, workDir } = paths;
 
-const basePlugins = framework.framework === 'react' ? [react()] : framework.framework.includes('vue') ? [vue()] : [];
+const basePlugins = framework.framework === 'react' ? [react({})] : framework.framework.includes('vue') ? [vue({})] : [];
 
 const config = defineConfig({
   mode: process.env.BIZ_ENV,
