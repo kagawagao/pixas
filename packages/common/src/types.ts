@@ -11,7 +11,7 @@ export type AppFramework = 'react' | 'vue' | 'unknown';
 /**
  * app bundler
  */
-export type AppBundler = 'webpack' | 'vite';
+export type AppBundler = 'webpack' | 'vite' | 'rsbuild';
 
 /**
  * global var format

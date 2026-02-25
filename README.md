@@ -12,6 +12,7 @@ front end develop toolkit, which support multi bundler(ex: webpack/vite/...) and
 - 📦 **Multi Bundler Support**
   - [x] [`webpack`](https://webpack.js.org)
   - [x] [`vite`](https://vitejs.dev)
+  - [x] [`rsbuild`](https://rsbuild.dev)
 - 🛠 **Multi Framework Support**
   - [x] [`react`](https://reactjs.org)
   - [x] [`vue`](https://vuejs.org)
@@ -41,6 +42,12 @@ Currently Supported Bundlers:
   ```bash
   npm install -D @pixas/bundler-vite
 
+  ```
+
+- `rsbuild`
+
+  ```bash
+  npm install -D @pixas/bundler-rsbuild
   ```
 
 ### Usage
