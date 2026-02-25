@@ -4,7 +4,6 @@ import { AppBundler } from '../types';
 export const bundlerMap = {
   webpack: () => import('@pixas/bundler-webpack').then((mod) => mod.default),
   vite: () => import('@pixas/bundler-vite').then((mod) => mod.default),
-  mako: () => import('@pixas/bundler-mako').then((mod) => mod.default),
 };
 
 export async function getBundlerByType(type: AppBundler) {
