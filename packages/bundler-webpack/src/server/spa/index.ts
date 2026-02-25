@@ -29,7 +29,7 @@ const mergedServerConfig: WebpackDevServer.Configuration = {
   ...webpackConfig.devServer,
 };
 
-const isHttps = mergedServerConfig.https;
+const isHttps = (mergedServerConfig as any).https;
 
 if (isHttps && typeof mergedServerConfig.client === 'object') {
   if (!mergedServerConfig.client.webSocketURL) {
@@ -46,6 +46,7 @@ if (isHttps && typeof mergedServerConfig.client === 'object') {
 // @ts-ignore
 const urls = prepareUrls(isHttps ? 'https' : 'http', host, port, publicPath);
 
+// @ts-ignore
 const compiler = createCompiler({
   appName,
   urls,
@@ -53,7 +54,7 @@ const compiler = createCompiler({
   webpack,
 });
 
-const devServer = new WebpackDevServer(mergedServerConfig, compiler);
+const devServer = new WebpackDevServer(mergedServerConfig, compiler as any);
 
 (async () => {
   try {
@@ -61,7 +62,7 @@ const devServer = new WebpackDevServer(mergedServerConfig, compiler);
     if (isInteractive) {
       clearConsole();
     }
-    openBrowserWithConfig(host, port, typeof isHttps === 'boolean' ? isHttps : !!mergedServerConfig.https);
+    openBrowserWithConfig(host, port, typeof isHttps === 'boolean' ? isHttps : !!((mergedServerConfig as any).https));
     const signals = ['SIGINT', 'SIGTERM'];
     signals.forEach((sig: any) => {
       process.on(sig, () => {
