@@ -1,8 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "strict": false,
-    "noImplicitAny": false,
     "outDir": "./lib",
     "declaration": true
   },
