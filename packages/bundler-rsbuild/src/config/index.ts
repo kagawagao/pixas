@@ -1,8 +1,8 @@
 import { AppType } from '@pixas/common';
-import { MakoConfig } from '../types';
+import { RsbuildConfig } from '@rsbuild/core';
 import spaConfig from './spa';
 
-const configs: Partial<Record<AppType, MakoConfig>> = {
+const configs: Partial<Record<AppType, RsbuildConfig>> = {
   spa: spaConfig,
 };
 

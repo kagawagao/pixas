@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@pixas/babel-preset-lib": "^0.13.0",
-    "@pixas/bundler-mako": "^0.13.0",
+    "@pixas/bundler-rsbuild": "^0.13.0",
     "@pixas/bundler-vite": "^0.13.0",
     "@pixas/bundler-webpack": "^0.13.0",
     "@types/less": "^3.0.3",
@@ -70,7 +70,7 @@
     "@types/webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
-    "@pixas/bundler-mako": "*",
+    "@pixas/bundler-rsbuild": "*",
     "@pixas/bundler-vite": "*",
     "@pixas/bundler-webpack": "*"
   },
@@ -79,6 +79,9 @@
       "optional": true
     },
     "@pixas/bundler-vite": {
+      "optional": true
+    },
+    "@pixas/bundler-rsbuild": {
       "optional": true
     }
   }

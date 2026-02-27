@@ -15,7 +15,7 @@ function resolveCjsDefault(mod: any): BundlerConstructor {
 export const bundlerMap: Record<AppBundler, () => Promise<BundlerConstructor>> = {
   webpack: () => import('@pixas/bundler-webpack').then(resolveCjsDefault),
   vite: () => import('@pixas/bundler-vite').then(resolveCjsDefault),
-  mako: () => import('@pixas/bundler-mako').then(resolveCjsDefault),
+  rsbuild: () => import('@pixas/bundler-rsbuild').then(resolveCjsDefault),
 };
 
 export async function getBundlerByType(type: AppBundler) {
