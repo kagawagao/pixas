@@ -11,19 +11,20 @@ export default class RsbuildBundler extends Bundler {
   private writeRuntimeConfig = async () => {
     const content = await global.getRuntimeGlobalVarsContent();
     await fs.ensureDir(publicDir);
-    fs.writeFileSync(`${publicDir}/config.js`, content);
+    await fs.writeFile(`${publicDir}/config.js`, content);
   };
 
   public start = async (opts: StartOptions) => {
-    if (this.app.mode !== 'spa') {
-      signale.error('Rsbuild only supports SPA mode at now.');
+    const config = configs[this.type];
+    if (!config) {
+      signale.error(`Rsbuild only supports SPA mode for now.`);
       return;
     }
     await this.writeRuntimeConfig();
     signale.start('Starting the development server...\n');
     const rsbuild = await createRsbuild({
       rsbuildConfig: {
-        ...configs[this.type],
+        ...config,
         server: {
           port: opts.port,
           host: opts.host,
@@ -35,13 +36,14 @@ export default class RsbuildBundler extends Bundler {
   };
 
   public build = async () => {
-    if (this.app.mode !== 'spa') {
-      signale.error('Rsbuild only supports SPA mode at now.');
+    const config = configs[this.type];
+    if (!config) {
+      signale.error(`Rsbuild only supports SPA mode for now.`);
       return;
     }
     await this.writeRuntimeConfig();
     const rsbuild = await createRsbuild({
-      rsbuildConfig: configs[this.type],
+      rsbuildConfig: config,
     });
     await rsbuild.build();
   };
