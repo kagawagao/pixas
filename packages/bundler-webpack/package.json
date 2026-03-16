@@ -35,7 +35,7 @@
     "chalk": "^4.1.2",
     "copy-webpack-plugin": "^13.0.0",
     "css-loader": "^7.1.1",
-    "css-minimizer-webpack-plugin": "^7.0.0",
+    "css-minimizer-webpack-plugin": "^8.0.0",
     "favicons": "^7.0.1",
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "file-loader": "^6.2.0",
