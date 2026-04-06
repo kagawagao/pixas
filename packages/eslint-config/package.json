@@ -34,7 +34,7 @@
     "@babel/plugin-transform-typescript": "^7.24.7",
     "@pixas/babel-preset-app": "^0.13.0",
     "@stylistic/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/eslint-plugin": "^8.58.0",
     "@typescript-eslint/parser": "^8.0.0",
     "@vue/babel-preset-app": "^5.0.8",
     "eslint": "^10.2.0",
