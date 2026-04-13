@@ -30,7 +30,7 @@
     "@pixas/common": "^0.13.0",
     "@vitejs/plugin-react": "^6.0.1",
     "@vitejs/plugin-vue": "^6.0.6",
-    "ejs": "^5.0.1",
+    "ejs": "^5.0.2",
     "fs-extra": "^11.2.0",
     "json-server": "^1.0.0-beta.15",
     "signale": "^1.4.0",
