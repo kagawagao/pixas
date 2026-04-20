@@ -26,6 +26,6 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "prettier": "^3.8.2"
+    "prettier": "^3.8.3"
   }
 }
