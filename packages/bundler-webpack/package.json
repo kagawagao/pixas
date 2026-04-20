@@ -49,7 +49,7 @@
     "postcss-loader": "^8.0.0",
     "postcss-normalize": "^13.0.0",
     "postcss-preset-env": "^11.2.1",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "react-dev-utils": "^12.1.0-next.14",
     "react-refresh": "^0.18.0",
     "signale": "^1.4.0",
