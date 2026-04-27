@@ -26,7 +26,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "postcss": "^8.5.10",
+    "postcss": "^8.5.12",
     "postcss-html": "^1.2.0",
     "postcss-js": "^5.0.0",
     "postcss-less": "^6.0.0",
