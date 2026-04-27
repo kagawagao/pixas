@@ -35,7 +35,7 @@
     "@pixas/babel-preset-app": "^0.13.0",
     "@stylistic/eslint-plugin": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^8.58.2",
-    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/parser": "^8.59.0",
     "@vue/babel-preset-app": "^5.0.8",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.0.1",
