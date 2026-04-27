@@ -54,7 +54,7 @@
     "react-refresh": "^0.18.0",
     "signale": "^1.4.0",
     "style-loader": "^4.0.0",
-    "terser-webpack-plugin": "^5.1.1",
+    "terser-webpack-plugin": "^5.5.0",
     "url-loader": "^4.1.1",
     "vue-loader": "^17.4.2",
     "webpack": "^5.106.2",
