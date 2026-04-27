@@ -8,7 +8,7 @@
     "build": "pixas build"
   },
   "dependencies": {
-    "vue": "^3.5.32"
+    "vue": "^3.5.33"
   },
   "devDependencies": {
     "@pixas/bundler-vite": "^0.13.0",
