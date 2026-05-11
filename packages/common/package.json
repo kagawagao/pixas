@@ -30,7 +30,7 @@
     "cosmiconfig": "^9.0.0",
     "dotenv": "^17.4.1",
     "dotenv-expand": "^13.0.0",
-    "fs-extra": "^11.2.0",
+    "fs-extra": "^11.3.5",
     "lodash": "^4.18.1",
     "lodash-es": "^4.18.1",
     "postcss": "^8.5.14",

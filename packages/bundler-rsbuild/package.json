@@ -32,7 +32,7 @@
     "@rsbuild/plugin-less": "^1.6.3",
     "@rsbuild/plugin-react": "^2.0.0",
     "@rsbuild/plugin-vue": "^1.2.8",
-    "fs-extra": "^11.2.0",
+    "fs-extra": "^11.3.5",
     "signale": "^1.4.0"
   }
 }
