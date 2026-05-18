@@ -29,7 +29,7 @@
     "@pixas/bundler-base": "^0.13.0",
     "@pixas/common": "^0.13.0",
     "@vitejs/plugin-react": "^6.0.2",
-    "@vitejs/plugin-vue": "^6.0.6",
+    "@vitejs/plugin-vue": "^6.0.7",
     "ejs": "^5.0.2",
     "fs-extra": "^11.3.5",
     "json-server": "^1.0.0-beta.15",
