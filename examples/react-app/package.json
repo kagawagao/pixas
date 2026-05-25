@@ -16,7 +16,7 @@
     "@pixas/babel-preset-app": "^0.13.0",
     "@pixas/bundler-webpack": "^0.13.0",
     "@pixas/cli": "^0.13.0",
-    "@types/react": "^19.0.8",
+    "@types/react": "^19.2.15",
     "@types/react-dom": "^19.0.3"
   },
   "browserslist": {
