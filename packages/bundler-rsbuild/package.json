@@ -30,7 +30,7 @@
     "@pixas/common": "^0.13.0",
     "@rsbuild/core": "^2.0.7",
     "@rsbuild/plugin-less": "^1.6.4",
-    "@rsbuild/plugin-react": "^2.0.0",
+    "@rsbuild/plugin-react": "^2.0.1",
     "@rsbuild/plugin-vue": "^1.2.8",
     "fs-extra": "^11.3.5",
     "signale": "^1.4.0"
