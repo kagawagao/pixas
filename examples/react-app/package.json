@@ -9,14 +9,14 @@
     "build": "pixas build"
   },
   "dependencies": {
-    "react": "^19.2.6",
+    "react": "^19.2.7",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@pixas/babel-preset-app": "^0.13.0",
     "@pixas/bundler-webpack": "^0.13.0",
     "@pixas/cli": "^0.13.0",
-    "@types/react": "^19.2.15",
+    "@types/react": "^19.2.16",
     "@types/react-dom": "^19.0.3"
   },
   "browserslist": {
