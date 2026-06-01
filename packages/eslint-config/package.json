@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@babel/plugin-transform-typescript": "^7.24.7",
+    "@babel/plugin-transform-typescript": "^7.29.7",
     "@pixas/babel-preset-app": "^0.13.0",
     "@stylistic/eslint-plugin": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^8.59.4",
