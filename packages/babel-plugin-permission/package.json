@@ -22,7 +22,7 @@
     "build": "tsc --outDir lib --module commonjs --target es5"
   },
   "dependencies": {
-    "@babel/core": "^7.18.6",
+    "@babel/core": "^7.29.7",
     "@babel/helper-plugin-utils": "^7.18.6",
     "@babel/plugin-syntax-jsx": "^7.18.6",
     "@babel/types": "^7.18.7"
