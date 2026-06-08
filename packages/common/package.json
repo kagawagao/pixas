@@ -27,7 +27,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "cosmiconfig": "^9.0.0",
+    "cosmiconfig": "^9.0.2",
     "dotenv": "^17.4.1",
     "dotenv-expand": "^13.0.0",
     "fs-extra": "^11.3.5",
