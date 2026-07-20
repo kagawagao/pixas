@@ -37,7 +37,7 @@
     "jest": "^30.0.0",
     "lerna": "^9.0.0",
     "lint-staged": "^17.0.4",
-    "typescript": "^6.0.2"
+    "typescript": "^7.0.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
