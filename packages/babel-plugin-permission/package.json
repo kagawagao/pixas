@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.29.7",
-    "@babel/helper-plugin-utils": "^7.18.6",
+    "@babel/helper-plugin-utils": "^8.0.1",
     "@babel/plugin-syntax-jsx": "^7.29.7",
     "@babel/types": "^8.0.4"
   },
