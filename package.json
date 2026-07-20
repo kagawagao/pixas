@@ -18,7 +18,7 @@
   "author": "kagawa <kingsongao1221@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.24.5",
+    "@babel/cli": "^8.0.4",
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
     "@pixas/eslint-config": "file:./packages/eslint-config",
