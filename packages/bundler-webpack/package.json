@@ -26,7 +26,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@babel/runtime": "^7.29.7",
+    "@babel/runtime": "^8.0.0",
     "@opd/css-modules-typings-loader": "^1.4.1",
     "@pixas/bundler-base": "^0.13.0",
     "@pixas/common": "^0.13.0",

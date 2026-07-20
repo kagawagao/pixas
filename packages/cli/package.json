@@ -33,7 +33,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@babel/runtime": "^7.29.7",
+    "@babel/runtime": "^8.0.0",
     "@opas/core": "^1.0.1",
     "@opas/plugin-app": "^1.0.1",
     "@pixas/babel-preset-app": "^0.13.0",
