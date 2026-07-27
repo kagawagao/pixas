@@ -45,7 +45,7 @@
     "chalk": "^4.1.2",
     "commander": "11.1.0",
     "core-js": "^3.10.1",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.6",
     "signale": "^1.4.0"
   },
   "babel": {
