@@ -40,7 +40,7 @@
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "file-loader": "^6.2.0",
     "fs-extra": "^11.4.0",
-    "html-webpack-plugin": "^5.6.7",
+    "html-webpack-plugin": "^5.6.8",
     "less": "^4.8.1",
     "less-loader": "^13.0.0",
     "mini-css-extract-plugin": "^2.10.2",
