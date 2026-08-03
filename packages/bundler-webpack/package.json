@@ -39,7 +39,7 @@
     "favicons": "^7.3.1",
     "favicons-webpack-plugin": "^6.0.0-alpha.1",
     "file-loader": "^6.2.0",
-    "fs-extra": "^11.3.5",
+    "fs-extra": "^11.4.0",
     "html-webpack-plugin": "^5.6.7",
     "less": "^4.7.0",
     "less-loader": "^13.0.0",
