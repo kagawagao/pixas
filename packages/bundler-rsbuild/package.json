@@ -28,7 +28,7 @@
   "dependencies": {
     "@pixas/bundler-base": "^0.13.0",
     "@pixas/common": "^0.13.0",
-    "@rsbuild/core": "^2.1.8",
+    "@rsbuild/core": "^2.1.9",
     "@rsbuild/plugin-less": "^2.0.1",
     "@rsbuild/plugin-react": "^2.0.1",
     "@rsbuild/plugin-vue": "^2.0.1",
