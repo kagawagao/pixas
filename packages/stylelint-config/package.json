@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "postcss": "^8.5.26",
-    "postcss-html": "^1.2.0",
+    "postcss-html": "^2.0.0",
     "postcss-js": "^5.0.0",
     "postcss-less": "^6.0.0",
     "postcss-markdown": "^2.0.0",
