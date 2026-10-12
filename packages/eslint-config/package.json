@@ -30,7 +30,7 @@
     "preversion": "npm run build"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^8.0.1",
+    "@babel/eslint-parser": "^8.0.7",
     "@babel/plugin-transform-typescript": "^8.0.1",
     "@pixas/babel-preset-app": "^0.13.0",
     "@stylistic/eslint-plugin": "^5.0.0",
