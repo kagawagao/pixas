@@ -29,7 +29,7 @@
     "postcss": "^8.5.31",
     "postcss-html": "^2.0.0",
     "postcss-js": "^5.0.0",
-    "postcss-less": "^6.0.0",
+    "postcss-less": "^7.0.1",
     "postcss-markdown": "^2.0.0",
     "postcss-scss": "^4.0.4",
     "stylelint": "^17.16.0",
