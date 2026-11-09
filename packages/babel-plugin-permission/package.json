@@ -25,7 +25,7 @@
     "@babel/core": "^8.0.10",
     "@babel/helper-plugin-utils": "^8.0.1",
     "@babel/plugin-syntax-jsx": "^8.0.1",
-    "@babel/types": "^8.0.10"
+    "@babel/types": "^8.1.0"
   },
   "babel": {
     "presets": [
